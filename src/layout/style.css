@@ -1,0 +1,14 @@
+body {
+  background: linear-gradient(180deg, #1F2123 0%, #131517 100%);
+}
+
+img {
+  max-width: 100%;
+  min-width: 52px;
+}
+
+@media (min-width: 900px) {
+  img {
+    min-width: 76px;
+  }
+}

@@ -13,7 +13,10 @@ const Token = ({ img }: { img: any }) => {
     <Box
       sx={{
         borderRadius: "16px",
-        padding: "29px 42px",
+        padding: {
+          xs: "20px 24px",
+          md: "29px 42px",
+        },
         background:
           "var(--secondary-s-3, linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.03) 100%))",
         backdropFilter: "blur(42px)",
@@ -29,8 +32,11 @@ const TextToken = ({ number, label }: { number: string; label: string }) => {
     <Box
       sx={{
         borderRadius: "16px",
-        padding: "23px",
-        minWidth: "160px",
+        padding: {
+          xs: "27px",
+          md: "23px",
+        },
+        minWidth: { xs: "100px", md: "160px" },
         border: "1px solid var(--primary-p-3, #E2571C)",
         background:
           "var(--secondary-s-3, linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.03) 100%))",
@@ -41,7 +47,10 @@ const TextToken = ({ number, label }: { number: string; label: string }) => {
         sx={{
           color: "var(--secondary-s-2, #FFF)",
           fontFamily: "Ubuntu",
-          fontSize: "32px",
+          fontSize: {
+            xs: "24px",
+            md: "32px",
+          },
           fontStyle: "normal",
           fontWeight: 700,
           lineHeight: "normal",
@@ -53,7 +62,10 @@ const TextToken = ({ number, label }: { number: string; label: string }) => {
         sx={{
           color: "var(--secondary-s-2, #FFF)",
           fontFamily: "Ubuntu",
-          fontSize: "24px",
+          fontSize: {
+            xs: "14px",
+            md: "24px",
+          },
           fontStyle: "normal",
           fontWeight: 700,
           lineHeight: "normal",
@@ -72,6 +84,14 @@ const TokensSlider = () => {
       sx={{
         overflow: "hidden",
         marginBottom: "60px",
+        transform: {
+          xs: "translateX(-23%)",
+          md: "unset",
+        },
+        width: {
+          xs: "200%",
+          md: "initial",
+        },
       }}
     >
       <Box

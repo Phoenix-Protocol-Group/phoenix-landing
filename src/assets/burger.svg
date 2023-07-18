@@ -1,0 +1,13 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1597877794">
+<rect id="Rectangle 39298" width="44" height="44" rx="16" fill="url(#paint0_linear_430_3519)" fill-opacity="0.05"/>
+<path id="Arrow 4" d="M31.0586 24.5884L12.9409 24.5884" stroke="white"/>
+<path id="Arrow 5" d="M31.0586 20.7061L12.9409 20.7061" stroke="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_430_3519" x1="22" y1="0" x2="22" y2="44" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0.5"/>
+</linearGradient>
+</defs>
+</svg>

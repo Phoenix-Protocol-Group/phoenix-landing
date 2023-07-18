@@ -12,7 +12,12 @@ const Seo = () => {
       />
       <meta name="theme-color" content="#fff" />
       <link rel="shortcut icon" href="" type="image/x-icon" />
-      <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32"></link>
+      <link
+        rel="icon"
+        type="image/png"
+        href="/images/favicon.png"
+        sizes="32x32"
+      ></link>
       <meta name="robots" content="index,follow" />
       <meta property="og:locale" content="en" />
       <meta property="og:title" content="Phoenix" />
