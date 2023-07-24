@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import "@fontsource/ubuntu";
 import "@fontsource/ubuntu/400.css";
 import "./style.css";
+import Banner from "../components/Banner";
 
 const theme = createTheme({
   palette: {
@@ -21,7 +22,7 @@ const theme = createTheme({
       fontStyle: "normal",
       fontWeight: 400,
       lineHeight: "100%",
-      "@media (min-width:768px)": {
+      "@media (min-width:900px)": {
         fontSize: "99px",
       },
     },
@@ -76,6 +77,7 @@ const Layout = ({ children }: { children: any }) => {
         <CssBaseline />
         <NavBar />
         {children}
+        <Banner />
         <Footer />
       </ThemeProvider>
     </>

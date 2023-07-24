@@ -2,6 +2,8 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import Button from "../Button";
 import LiquidityPreview from "../../assets/liquidityPreview.svg";
 import TrackAssets from "../../assets/trackassets.svg";
+import BackgroundImage from "../../images/hero.png";
+import BackgroundImageMobile from "../../images/heroMobile.png";
 
 const BoxStyle = {
   borderRadius: "16px",
@@ -34,7 +36,6 @@ const Hero = () => {
   return (
     <Box
       sx={{
-        position: "relative",
         marginTop: {
           xs: "135px",
           md: "280px",
@@ -53,23 +54,46 @@ const Hero = () => {
           background:
             "var(--primary-p-1, linear-gradient(135deg, #E2491A 0%, #E21B1B 17.08%, #E2491A 42.71%, #E2AA1B 100%))",
           filter: "blur(182px)",
-        },
+          display: {
+            xs: "none",
+            lg: "block"
+          }
+        }
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" sx={{
+        position: "relative"
+      }}>
+        <Box
+          component="img"
+          sx={{
+            mixBlendMode: "lighten",
+            position: "absolute",
+            right: "-105px",
+            top: "-280px",
+            display: {
+              xs: "none",
+              sm: "block"
+            }
+          }}
+          src={BackgroundImage}
+        />
         <Grid
           container
           sx={{
-            marginBottom: "185px",
+            marginBottom: {
+              xs: "-100px",
+              sm: "185px"
+            }
           }}
         >
-          <Grid item md={6}>
+          <Grid item xs={12} sm={6}>
             <Typography
               typography="h1"
               sx={{
                 textAlign: {
                   xs: "center",
-                  md: "left",
+                  sm: "left",
                 },
               }}
             >
@@ -81,7 +105,7 @@ const Hero = () => {
                 marginBottom: "20px",
                 justifyContent: {
                   xs: "center",
-                  md: "flex-start",
+                  sm: "flex-start",
                 },
               }}
             >
@@ -122,7 +146,7 @@ const Hero = () => {
                 display: "flex",
                 justifyContent: {
                   xs: "space-around",
-                  md: "flex-start",
+                  sm: "flex-start",
                 },
               }}
             >
@@ -134,6 +158,26 @@ const Hero = () => {
               />
               <Button label="Learn more" />
             </Box>
+          </Grid>
+          <Grid item xs={12} sx={{
+            display: {
+              xs: "flex",
+              sm: "none"
+            },
+            justifyContent: "center",
+            maxHeight: "453px",
+            overflow: "hidden"
+          }}>
+            <Box
+              component="img"
+              sx={{
+                mixBlendMode: "lighten",
+                position: "relative",
+                top: "-25px",
+                height: "100%",
+              }}
+              src={BackgroundImageMobile}
+            />
           </Grid>
         </Grid>
         <Grid container spacing={2}>
