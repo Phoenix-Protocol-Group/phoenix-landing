@@ -12,22 +12,6 @@ const config: GatsbyConfig = {
   plugins: [
     "gatsby-plugin-emotion",
     "gatsby-plugin-material-ui",
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /assets/,
-        },
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: "./src/assets/",
-      },
-      __key: "assets",
-    },
   ],
 };
 
