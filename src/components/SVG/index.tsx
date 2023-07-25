@@ -29,16 +29,16 @@ const Logo = () => (
     </g>
     <defs>
       <linearGradient id="paint0_linear_426_4476" x1="19.9059" y1="15.6321" x2="26.3606" y2="50.8469" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FCCD15" />
-        <stop offset="0.2706" stop-color="#FC941A" />
-        <stop offset="0.6118" stop-color="#FC3E28" />
-        <stop offset="1" stop-color="#9D1432" />
+        <stop stopColor="#FCCD15" />
+        <stop offset="0.2706" stopColor="#FC941A" />
+        <stop offset="0.6118" stopColor="#FC3E28" />
+        <stop offset="1" stopColor="#9D1432" />
       </linearGradient>
       <linearGradient id="paint1_linear_426_4476" x1="81.4021" y1="22.8319" x2="81.4021" y2="52.8479" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FCCD15" />
-        <stop offset="0.2706" stop-color="#FC941A" />
-        <stop offset="0.6118" stop-color="#FC3E28" />
-        <stop offset="1" stop-color="#9D1432" />
+        <stop stopColor="#FCCD15" />
+        <stop offset="0.2706" stopColor="#FC941A" />
+        <stop offset="0.6118" stopColor="#FC3E28" />
+        <stop offset="1" stopColor="#9D1432" />
       </linearGradient>
     </defs>
   </svg>
@@ -47,14 +47,14 @@ const Logo = () => (
 const Burger = () => (
   <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="Group 1597877794">
-      <rect id="Rectangle 39298" width="44" height="44" rx="16" fill="url(#paint0_linear_430_3519)" fill-opacity="0.05" />
+      <rect id="Rectangle 39298" width="44" height="44" rx="16" fill="url(#paint0_linear_430_3519)" fillOpacity="0.05" />
       <path id="Arrow 4" d="M31.0586 24.5884L12.9409 24.5884" stroke="white" />
       <path id="Arrow 5" d="M31.0586 20.7061L12.9409 20.7061" stroke="white" />
     </g>
     <defs>
       <linearGradient id="paint0_linear_430_3519" x1="22" y1="0" x2="22" y2="44" gradientUnits="userSpaceOnUse">
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0.5" />
+        <stop color="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0.5"/>
       </linearGradient>
     </defs>
   </svg>
@@ -77,10 +77,10 @@ const LogoPhoenix = () => (
     <path d="M161.097 47.6128C159.8 45.3427 153.392 45.5035 149.662 47.6943C140.417 53.1283 147.879 64.1573 157.204 58.7232C160.934 56.5346 162.475 49.885 161.097 47.6128Z" fill="#1F2123" />
     <defs>
       <linearGradient id="paint0_linear_426_4896" x1="83.2356" y1="-16.8485" x2="115.996" y2="161.885" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FCCD15" />
-        <stop offset="0.2706" stop-color="#FC941A" />
-        <stop offset="0.6118" stop-color="#FC3E28" />
-        <stop offset="1" stop-color="#9D1432" />
+        <stop stopColor="#FCCD15" />
+        <stop offset="0.2706" stopColor="#FC941A" />
+        <stop offset="0.6118" stopColor="#FC3E28" />
+        <stop offset="1" stopColor="#9D1432" />
       </linearGradient>
     </defs>
   </svg>
@@ -129,10 +129,10 @@ const LogoSmall = () => (
     </g>
     <defs>
       <linearGradient id="paint0_linear_430_3400" x1="18.9878" y1="14.6893" x2="25.1991" y2="48.4225" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FCCD15" />
-        <stop offset="0.2706" stop-color="#FC941A" />
-        <stop offset="0.6118" stop-color="#FC3E28" />
-        <stop offset="1" stop-color="#9D1432" />
+        <stop stopColor="#FCCD15" />
+        <stop offset="0.2706" stopColor="#FC941A" />
+        <stop offset="0.6118" stopColor="#FC3E28" />
+        <stop offset="1" stopColor="#9D1432" />
       </linearGradient>
     </defs>
   </svg>
@@ -144,7 +144,7 @@ const TrackAssets = () => (
     <rect x="90.8135" y="19" width="80" height="74" rx="16" fill="#E3871C" />
     <rect x="181.813" width="79" height="93" rx="16" fill="#E26F1C" />
     <g opacity="0.2">
-      <mask id="mask0_426_4606" style={{maskType: "alpha"}} maskUnits="userSpaceOnUse" x="90" y="102" width="81" height="46">
+      <mask id="mask0_426_4606"  maskUnits="userSpaceOnUse" x="90" y="102" width="81" height="46">
         <rect opacity="0.6" width="80" height="46" rx="16" transform="matrix(1 0 0 -1 90.8135 148)" fill="white" />
       </mask>
       <g mask="url(#mask0_426_4606)">
@@ -169,7 +169,7 @@ const TrackAssets = () => (
       </g>
     </g>
     <g opacity="0.2">
-      <mask id="mask1_426_4606" style={{maskType: "alpha"}} maskUnits="userSpaceOnUse" x="181" y="102" width="81" height="91">
+      <mask id="mask1_426_4606"  maskUnits="userSpaceOnUse" x="181" y="102" width="81" height="91">
         <rect opacity="0.6" width="80" height="91" rx="16" transform="matrix(1 0 0 -1 181.813 193)" fill="white" />
       </mask>
       <g mask="url(#mask1_426_4606)">
@@ -201,7 +201,7 @@ const TrackAssets = () => (
       </g>
     </g>
     <g opacity="0.2">
-      <mask id="mask2_426_4606" style={{maskType: "alpha"}} maskUnits="userSpaceOnUse" x="0" y="102" width="81" height="91">
+      <mask id="mask2_426_4606"  maskUnits="userSpaceOnUse" x="0" y="102" width="81" height="91">
         <rect opacity="0.6" width="80" height="91" rx="16" transform="matrix(1 0 0 -1 0.813477 193)" fill="white" />
       </mask>
       <g mask="url(#mask2_426_4606)">
@@ -233,7 +233,7 @@ const TrackAssets = () => (
       </g>
     </g>
     <g opacity="0.2">
-      <mask id="mask3_426_4606" style={{maskType: "alpha"}} maskUnits="userSpaceOnUse" x="271" y="102" width="81" height="98">
+      <mask id="mask3_426_4606"  maskUnits="userSpaceOnUse" x="271" y="102" width="81" height="98">
         <rect opacity="0.6" width="80" height="98" rx="16" transform="matrix(1 0 0 -1 271.813 200)" fill="white" />
       </mask>
       <g mask="url(#mask3_426_4606)">

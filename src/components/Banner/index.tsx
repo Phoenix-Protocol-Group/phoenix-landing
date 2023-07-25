@@ -1,7 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import Button from "../Button";
-import PhoenixLogo from "../../assets/logoPhoenix.svg";
-import StellarLogo from "../../assets/logoStellar.svg";
+import { LogoPhoenix, LogoStellar } from "../SVG";
 
 const Banner = () => {
   return (
@@ -50,7 +49,7 @@ const Banner = () => {
               transform: "translateY(-30%)",
               right: "30%"
             }}>
-              <PhoenixLogo style/>
+              <LogoPhoenix/>
             </Box>
             <Box sx={{
               borderRadius: "50%", 
@@ -71,7 +70,7 @@ const Banner = () => {
               top: 0,
               transform: "translateY(-15%)"
             }}>
-              <StellarLogo/>
+              <LogoStellar/>
             </Box>
           </Box>
         </Grid>
