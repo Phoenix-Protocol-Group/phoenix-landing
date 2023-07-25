@@ -1,9 +1,9 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import Button from "../Button";
-import LiquidityPreview from "../../assets/liquidityPreview.svg";
-import TrackAssets from "../../assets/trackassets.svg";
+import { TrackAssets } from "../SVG";
 import BackgroundImage from "../../images/hero.png";
 import BackgroundImageMobile from "../../images/heroMobile.png";
+import LiquidityPreview from "../../images/liquidityPreview.png";
 
 const BoxStyle = {
   borderRadius: "16px",
@@ -191,7 +191,7 @@ const Hero = () => {
             >
               <Grid container spacing={5}>
                 <Grid item xs={12} md={6}>
-                  <LiquidityPreview />
+                  <img src={LiquidityPreview} />
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Typography sx={BoxHeaderStyle}>
@@ -260,7 +260,7 @@ const Hero = () => {
             >
               <Grid container spacing={5}>
                 <Grid item xs={12} md={6}>
-                  <LiquidityPreview />
+                  <img src={LiquidityPreview} />
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Typography sx={BoxHeaderStyle}>

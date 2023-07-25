@@ -1,6 +1,6 @@
 import { Box, Container, Button, Typography } from "@mui/material";
 import CustomButton from "../Button";
-import Logo from "../../assets/logo.svg";
+import {Logo} from "../SVG";
 
 const Footer = () => {
   return (

@@ -8,9 +8,7 @@ import {
 } from "@mui/material";
 import CustomButton from "../Button";
 
-import Logo from "../../assets/logo.svg";
-import LogoSmall from "../../assets/LogoSmall.svg";
-import Burger from "../../assets/burger.svg";
+import { Burger, Logo, LogoSmall } from "../SVG";
 import { useState } from "react";
 
 const NavBar = () => {
