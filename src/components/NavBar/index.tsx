@@ -140,7 +140,7 @@ const NavBar = () => {
       <Box
         sx={{
           display: isDrawerOpen ? "flex" : "none",
-          position: "absolute",
+          position: "fixed",
           background: "linear-gradient(180deg, #1A1C20 0%, #0E1011 100%)",
           top: "68.5px",
           width: "100%",
