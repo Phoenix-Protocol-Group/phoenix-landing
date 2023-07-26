@@ -11,6 +11,7 @@ const tokensRowStyle = {
 const Token = ({ img }: { img: any }) => {
   return (
     <Box
+      className="token"
       sx={{
         borderRadius: "16px",
         padding: {

@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import Button from "../Button";
-import { LogoPhoenix, LogoStellar } from "../SVG";
+import { LogoPhoenix, LogoStellar, LogoT } from "../SVG";
 
 const Banner = () => {
   return (
@@ -14,7 +14,7 @@ const Banner = () => {
         marginBottom: "48px",
         overflow: "hidden"
       }}>
-        <Grid item xs={6} sx={{
+        <Grid item xs={12} md={6} sx={{
           padding: "50px"
         }}>
           <Typography variant="h2" sx={{
@@ -25,9 +25,13 @@ const Banner = () => {
           </Typography>
           <Button label="Launch App" />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item md={6}>
           <Box sx={{
             position: "relative",
+            display: {
+              xs: "none",
+              md: "block%"
+            },
           }}>
             <Box sx={{
               borderRadius: "50%",
@@ -40,10 +44,12 @@ const Banner = () => {
               paddingTop: "40px",
               width: {
                 xs: "180px",
+                sm: "260px",
                 md: "312px"
               },
               height: {
                 xs: "180px",
+                sm: "260px",
                 md: "312px"
               },
               transform: "translateY(-30%)",
@@ -60,10 +66,12 @@ const Banner = () => {
               justifyContent: "center",
               width: {
                 xs: "128px",
+                sm: "260px",
                 md: "312px"
               },
               height: {
                 xs: "128px",
+                sm: "260px",
                 md: "312px"
               },
               right: "-20%",
@@ -71,6 +79,19 @@ const Banner = () => {
               transform: "translateY(-15%)"
             }}>
               <LogoStellar/>
+            </Box>
+            <Box sx={{
+              position: "absolute",
+              right: "10%",
+              maxWidth: {
+                xs: "128px",
+                sm: "260px",
+                md: "312px"
+              },
+              bottom: "-40px",
+              transform: "translateY(-15%)"
+            }}>
+              <LogoT />
             </Box>
           </Box>
         </Grid>

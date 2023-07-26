@@ -4,11 +4,18 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.token img {
   min-width: 52px;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 @media (min-width: 900px) {
-  img {
+  .token img {
     min-width: 76px;
   }
 }

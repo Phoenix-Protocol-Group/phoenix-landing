@@ -32,6 +32,11 @@ const BoxTextStyle = {
   opacity: 0.6000000238418579,
 };
 
+const centerStyle = {
+  display: "flex",
+  justifyContent: "center"
+}
+
 const Hero = () => {
   return (
     <Box
@@ -190,7 +195,7 @@ const Hero = () => {
               }}
             >
               <Grid container spacing={5}>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={6} sx={centerStyle}>
                   <img src={LiquidityPreview} />
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -222,7 +227,7 @@ const Hero = () => {
                     tools like a DEX, DOT liquid staking.{" "}
                   </Typography>
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={6} sx={centerStyle}>
                   <TrackAssets />
                 </Grid>
               </Grid>
@@ -247,7 +252,7 @@ const Hero = () => {
                     tools like a DEX, DOT liquid staking.{" "}
                   </Typography>
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={6} sx={centerStyle}>
                   <TrackAssets />
                 </Grid>
               </Grid>
@@ -259,7 +264,7 @@ const Hero = () => {
               }}
             >
               <Grid container spacing={5}>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={6} sx={centerStyle}>
                   <img src={LiquidityPreview} />
                 </Grid>
                 <Grid item xs={12} md={6}>

@@ -21,7 +21,10 @@ const styledHeaderStyle = {
 };
 
 const BoxStyle = {
-  maxWidth: "400px",
+  maxWidth: {
+    xs: "unset",
+    md: "400px"
+  },
   margin: {
     xs: "0 0 60px 0",
     md: "0 auto",
@@ -39,6 +42,7 @@ const TextImage = () => {
         <Grid container>
           <Grid
             item
+            xs={12}
             md={6}
             sx={{
               display: "flex",
@@ -64,12 +68,12 @@ const TextImage = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <img src={LowFees} />
           </Grid>
         </Grid>
         <Grid container>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <img src={LowFees} />
           </Grid>
           <Grid
@@ -98,6 +102,7 @@ const TextImage = () => {
         <Grid container>
           <Grid
             item
+            xs={12}
             md={6}
             sx={{
               display: "flex",
@@ -118,7 +123,7 @@ const TextImage = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <img src={LowFees} />
           </Grid>
         </Grid>
