@@ -23,7 +23,7 @@ const styledHeaderStyle = {
 const BoxStyle = {
   maxWidth: {
     xs: "unset",
-    md: "400px"
+    md: "400px",
   },
   margin: {
     xs: "0 0 60px 0",
@@ -58,13 +58,7 @@ const TextImage = () => {
                 </Typography>
               </Typography>
               <Typography sx={BoxTextStyle}>
-                Application-specific blockchain (appchain) has built-in tools
-                like a DEX, DOT liquid staking. Application-specific blockchain
-                (appchain) has built-in tools like a DEX, DOT liquid staking.
-                <br />
-                <br />
-                Application-specific blockchain (appchain) has built-in tools
-                like a DEX, DOT liquid staking.
+                We collect street food level fees so you can keep your wallet more full
               </Typography>
             </Box>
           </Grid>
@@ -72,7 +66,13 @@ const TextImage = () => {
             <img src={LowFees} />
           </Grid>
         </Grid>
-        <Grid container>
+        <Grid container sx={{
+          display: "flex",
+          flexDirection: {
+            xs: "column-reverse",
+            md: "unset" 
+          }
+        }}>
           <Grid item xs={12} md={6}>
             <img src={LowFees} />
           </Grid>
@@ -86,15 +86,14 @@ const TextImage = () => {
             }}
           >
             <Box sx={BoxStyle}>
-              <Typography typography="h2">Earn incentives</Typography>
+              <Typography typography="h2">
+                Earn{" "}
+                <Typography typography="h2" sx={styledHeaderStyle}>
+                  incentives
+                </Typography>
+              </Typography>
               <Typography sx={BoxTextStyle}>
-                Application-specific blockchain (appchain) has built-in tools
-                like a DEX, DOT liquid staking. Application-specific blockchain
-                (appchain) has built-in tools like a DEX, DOT liquid staking.
-                <br />
-                <br />
-                Application-specific blockchain (appchain) has built-in tools
-                like a DEX, DOT liquid staking.
+                Tasty and creative incentives that will make your mouth water
               </Typography>
             </Box>
           </Grid>
@@ -111,15 +110,14 @@ const TextImage = () => {
             }}
           >
             <Box sx={BoxStyle}>
-              <Typography typography="h2">Super low fees</Typography>
+              <Typography typography="h2">
+                <Typography typography="h2" sx={styledHeaderStyle}>
+                  Variety
+                </Typography>
+                {" "}of Pairs
+              </Typography>
               <Typography sx={BoxTextStyle}>
-                Application-specific blockchain (appchain) has built-in tools
-                like a DEX, DOT liquid staking. Application-specific blockchain
-                (appchain) has built-in tools like a DEX, DOT liquid staking.
-                <br />
-                <br />
-                Application-specific blockchain (appchain) has built-in tools
-                like a DEX, DOT liquid staking.
+                A vast menu of trading pairs with new pairs added frequently to keep things fresh!
               </Typography>
             </Box>
           </Grid>

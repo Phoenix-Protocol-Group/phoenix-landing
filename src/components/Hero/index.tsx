@@ -34,8 +34,8 @@ const BoxTextStyle = {
 
 const centerStyle = {
   display: "flex",
-  justifyContent: "center"
-}
+  justifyContent: "center",
+};
 
 const Hero = () => {
   return (
@@ -61,14 +61,17 @@ const Hero = () => {
           filter: "blur(182px)",
           display: {
             xs: "none",
-            lg: "block"
-          }
-        }
+            lg: "block",
+          },
+        },
       }}
     >
-      <Container maxWidth="lg" sx={{
-        position: "relative"
-      }}>
+      <Container
+        maxWidth="lg"
+        sx={{
+          position: "relative",
+        }}
+      >
         <Box
           component="img"
           sx={{
@@ -78,8 +81,8 @@ const Hero = () => {
             top: "-280px",
             display: {
               xs: "none",
-              sm: "block"
-            }
+              sm: "block",
+            },
           }}
           src={BackgroundImage}
         />
@@ -88,8 +91,8 @@ const Hero = () => {
           sx={{
             marginBottom: {
               xs: "-100px",
-              sm: "185px"
-            }
+              sm: "185px",
+            },
           }}
         >
           <Grid item xs={12} sm={6}>
@@ -164,15 +167,19 @@ const Hero = () => {
               <Button label="Learn more" />
             </Box>
           </Grid>
-          <Grid item xs={12} sx={{
-            display: {
-              xs: "flex",
-              sm: "none"
-            },
-            justifyContent: "center",
-            maxHeight: "453px",
-            overflow: "hidden"
-          }}>
+          <Grid
+            item
+            xs={12}
+            sx={{
+              display: {
+                xs: "flex",
+                sm: "none",
+              },
+              justifyContent: "center",
+              maxHeight: "453px",
+              overflow: "hidden",
+            }}
+          >
             <Box
               component="img"
               sx={{
