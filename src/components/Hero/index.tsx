@@ -262,7 +262,7 @@ const Hero = () => {
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Typography sx={BoxHeaderStyle}>
-                  Highest Volume pool (past 24 hrs)
+                    Highest Volume pool (past 24 hrs)
                   </Typography>
                 </Grid>
               </Grid>
