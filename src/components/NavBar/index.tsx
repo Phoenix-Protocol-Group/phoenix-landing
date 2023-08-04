@@ -14,7 +14,11 @@ import { useState } from "react";
 const NavBar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const items = ["Tokens", "Features", "Get Started", "Our Team"];
+  const items = ["Pools", "Tokens", "About", "Get Started"];
+
+  const scrollTo = (item: string) => {
+    
+  };
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -86,6 +90,7 @@ const NavBar = () => {
             >
               {items.map((page) => (
                 <Button
+                  onClick={() => scrollTo(page)}
                   key={page}
                   sx={{
                     color: "#FFF",
@@ -152,6 +157,7 @@ const NavBar = () => {
       >
         {items.map((page) => (
           <Button
+            onClick={() => scrollTo(page)}
             key={page}
             sx={{
               color: "#FFF",

@@ -146,8 +146,7 @@ const Hero = () => {
                 },
               }}
             >
-              Here goes a short sentence introducing the features of the DeFi
-              hub and what it serves
+              The serving you the tastiest gains in DeFi
             </Typography>
             <Box
               sx={{
@@ -207,12 +206,7 @@ const Hero = () => {
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Typography sx={BoxHeaderStyle}>
-                    Add Liquidity to popular pools
-                  </Typography>
-                  <Typography sx={BoxTextStyle}>
-                    Application-specific blockchain (appchain) has built-in
-                    tools like a DEX, DOT liquid staking, and the aUSD
-                    over-collateralized stablecoin.{" "}
+                    Highest Liquidity Pool
                   </Typography>
                 </Grid>
               </Grid>
@@ -227,11 +221,7 @@ const Hero = () => {
               <Grid container spacing={5}>
                 <Grid item xs={12} md={6}>
                   <Typography sx={BoxHeaderStyle}>
-                    Add Liquidity to popular pools
-                  </Typography>
-                  <Typography sx={BoxTextStyle}>
-                    Application-specific blockchain (appchain) has built-in
-                    tools like a DEX, DOT liquid staking.{" "}
+                    Highest APR Pool
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={6} sx={centerStyle}>
@@ -252,11 +242,7 @@ const Hero = () => {
               <Grid container spacing={5}>
                 <Grid item xs={12} md={6}>
                   <Typography sx={BoxHeaderStyle}>
-                    Add Liquidity to popular pools
-                  </Typography>
-                  <Typography sx={BoxTextStyle}>
-                    Application-specific blockchain (appchain) has built-in
-                    tools like a DEX, DOT liquid staking.{" "}
+                    Newest Liquidity pool
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={6} sx={centerStyle}>
@@ -276,12 +262,7 @@ const Hero = () => {
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Typography sx={BoxHeaderStyle}>
-                    Add Liquidity to popular pools
-                  </Typography>
-                  <Typography sx={BoxTextStyle}>
-                    Application-specific blockchain (appchain) has built-in
-                    tools like a DEX, DOT liquid staking, and the aUSD
-                    over-collateralized stablecoin.{" "}
+                  Highest Volume pool (past 24 hrs)
                   </Typography>
                 </Grid>
               </Grid>
