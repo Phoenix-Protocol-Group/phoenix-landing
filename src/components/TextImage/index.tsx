@@ -1,5 +1,7 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import LowFees from "../../images/lowFees.png";
+import EarnIncentives from "../../images/earnIncentives.png";
+import UserExperience from "../../images/userExperience.png";
 
 const BoxTextStyle = {
   color: "#FFF",
@@ -74,7 +76,7 @@ const TextImage = () => {
           }
         }}>
           <Grid item xs={12} md={6}>
-            <img src={LowFees} />
+            <img src={EarnIncentives} />
           </Grid>
           <Grid
             item
@@ -122,7 +124,7 @@ const TextImage = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
-            <img src={LowFees} />
+            <img src={UserExperience} />
           </Grid>
         </Grid>
       </Container>

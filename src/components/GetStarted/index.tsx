@@ -58,32 +58,22 @@ const GetStarted = () => {
           Phoenix Ecosystem
         </Typography>
         <Grid container spacing={10}>
-          <Grid item md={3}>
+          <Grid item md={4}>
             <Typography sx={StepHeaderStyle}>Step 1</Typography>
             <Typography sx={StepTextStyle}>
-              Application-specific blockchain (appchain) has built-in tools like
-              a DEX, DOT liquid staking.
+              Install a wallet to your browser, such as Freighter wallet
             </Typography>
           </Grid>
-          <Grid item md={3}>
-            <Typography sx={StepHeaderStyle}>Step 1</Typography>
+          <Grid item md={4}>
+            <Typography sx={StepHeaderStyle}>Step 2</Typography>
             <Typography sx={StepTextStyle}>
-              Application-specific blockchain (appchain) has built-in tools like
-              a DEX, DOT liquid staking.
+              Send some XLM to wallet address, such as from a centralized exchange or request some from a faucet
             </Typography>
           </Grid>
-          <Grid item md={3}>
-            <Typography sx={StepHeaderStyle}>Step 1</Typography>
+          <Grid item md={4}>
+            <Typography sx={StepHeaderStyle}>Step 3</Typography>
             <Typography sx={StepTextStyle}>
-              Application-specific blockchain (appchain) has built-in tools like
-              a DEX, DOT liquid staking.
-            </Typography>
-          </Grid>
-          <Grid item md={3}>
-            <Typography sx={StepHeaderStyle}>Step 1</Typography>
-            <Typography sx={StepTextStyle}>
-              Application-specific blockchain (appchain) has built-in tools like
-              a DEX, DOT liquid staking.
+            Connect your wallet with Phoenix Defi Hub!
             </Typography>
           </Grid>
         </Grid>

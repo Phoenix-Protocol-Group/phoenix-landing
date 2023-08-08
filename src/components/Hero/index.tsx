@@ -1,6 +1,5 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import Button from "../Button";
-import { TrackAssets } from "../SVG";
 import BackgroundImage from "../../images/hero.png";
 import BackgroundImageMobile from "../../images/heroMobile.png";
 import LiquidityPreview from "../../images/liquidityPreview.png";
@@ -163,7 +162,7 @@ const Hero = () => {
                 }}
                 label="Launch App"
               />
-              <Button label="Learn more" />
+              <Button type="secondary" label="Learn more" />
             </Box>
           </Grid>
           <Grid
@@ -195,16 +194,16 @@ const Hero = () => {
           <Grid item xs={12} lg={6}>
             <Box
               sx={{
-                padding: "60px 32px",
+                padding: "48px 32px",
                 marginBottom: "20px",
                 ...BoxStyle,
               }}
             >
               <Grid container spacing={5}>
-                <Grid item xs={12} md={6} sx={centerStyle}>
+                <Grid item xs={12} md={5} sx={centerStyle}>
                   <img src={LiquidityPreview} />
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={7}>
                   <Typography sx={BoxHeaderStyle}>
                     Highest Liquidity Pool
                   </Typography>
@@ -213,19 +212,19 @@ const Hero = () => {
             </Box>
             <Box
               sx={{
-                padding: "32px 32px 16px 42px",
+                padding: "48px 32px 16px 44px",
                 overflow: "hidden",
                 ...BoxStyle,
               }}
             >
               <Grid container spacing={5}>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={7}>
                   <Typography sx={BoxHeaderStyle}>
                     Highest APR Pool
                   </Typography>
                 </Grid>
-                <Grid item xs={12} md={6} sx={centerStyle}>
-                  <TrackAssets />
+                <Grid item xs={12} md={5} sx={centerStyle}>
+                  <img src={LiquidityPreview} />
                 </Grid>
               </Grid>
             </Box>
@@ -233,34 +232,34 @@ const Hero = () => {
           <Grid item xs={12} lg={6}>
             <Box
               sx={{
-                padding: "32px 32px 16px 42px",
+                padding: "48px 32px 16px 42px",
                 marginBottom: "20px",
                 overflow: "hidden",
                 ...BoxStyle,
               }}
             >
               <Grid container spacing={5}>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={7}>
                   <Typography sx={BoxHeaderStyle}>
                     Newest Liquidity pool
                   </Typography>
                 </Grid>
-                <Grid item xs={12} md={6} sx={centerStyle}>
-                  <TrackAssets />
+                <Grid item xs={12} md={5} sx={centerStyle}>
+                  <img src={LiquidityPreview} />
                 </Grid>
               </Grid>
             </Box>
             <Box
               sx={{
-                padding: "60px 32px",
+                padding: "48px 32px",
                 ...BoxStyle,
               }}
             >
               <Grid container spacing={5}>
-                <Grid item xs={12} md={6} sx={centerStyle}>
+                <Grid item xs={12} md={5} sx={centerStyle}>
                   <img src={LiquidityPreview} />
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={7}>
                   <Typography sx={BoxHeaderStyle}>
                     Highest Volume pool (past 24 hrs)
                   </Typography>

@@ -5,20 +5,24 @@ import {
   Container,
   IconButton,
   Toolbar,
+  Fade
 } from "@mui/material";
 import CustomButton from "../Button";
-
 import { Burger, Logo, LogoSmall } from "../SVG";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const NavBar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const items = ["Pools", "Tokens", "About", "Get Started"];
 
-  const scrollTo = (item: string) => {
-    
-  };
+  const scrollTo = (item: string) => {};
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -155,24 +159,26 @@ const NavBar = () => {
           padding: "32px 0",
         }}
       >
-        {items.map((page) => (
-          <Button
-            onClick={() => scrollTo(page)}
-            key={page}
-            sx={{
-              color: "#FFF",
-              fontFamily: "Ubuntu",
-              fontSize: "24px",
-              textTransform: "none",
-              fontStyle: "normal",
-              fontWeight: 400,
-              lineHeight: "20px",
-              opacity: "0.6000000238418579",
-              marginBottom: "16px",
-            }}
-          >
-            {page}
-          </Button>
+        {items.map((page, index) => (
+          <Fade in={isVisible} mountOnEnter unmountOnExit timeout={index * 100}>
+            <Button
+              onClick={() => scrollTo(page)}
+              key={page}
+              sx={{
+                color: "#FFF",
+                fontFamily: "Ubuntu",
+                fontSize: "24px",
+                textTransform: "none",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "20px",
+                opacity: "0.6000000238418579",
+                marginBottom: "16px",
+              }}
+            >
+              {page}
+            </Button>
+          </Fade>
         ))}
       </Box>
     </Box>
