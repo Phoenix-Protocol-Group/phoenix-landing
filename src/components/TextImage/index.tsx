@@ -36,6 +36,7 @@ const BoxStyle = {
 const TextImage = () => {
   return (
     <Box
+      id="about"
       sx={{
         marginBottom: "109px",
       }}

@@ -76,8 +76,9 @@ const Hero = () => {
           sx={{
             mixBlendMode: "lighten",
             position: "absolute",
-            right: "-105px",
-            top: "-280px",
+            right: "-300px",
+            maxWidth: "1196px",
+            top: "-400px",
             display: {
               xs: "none",
               sm: "block",
@@ -190,7 +191,7 @@ const Hero = () => {
             />
           </Grid>
         </Grid>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} id="pools">
           <Grid item xs={12} lg={6}>
             <Box
               sx={{

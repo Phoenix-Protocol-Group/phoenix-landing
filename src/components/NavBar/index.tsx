@@ -14,9 +14,27 @@ import { useEffect, useState } from "react";
 const NavBar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const items = ["Pools", "Tokens", "About", "Get Started"];
+  const items = [{
+    id: "pools",
+    title: "Pools"
+  }, {
+    id: "tokens",
+    title: "Tokens"
+  }, {
+    id: "about",
+    title: "About"
+  }, {
+    id: "getStarted",
+    title: "Get Started"
+  }]
 
-  const scrollTo = (item: string) => {};
+  const scrollTo = (id: string) => {
+    const yOffset = -120; 
+
+    const element = document.getElementById(id);
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({top: y, behavior: 'smooth'});
+  };
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -94,8 +112,8 @@ const NavBar = () => {
             >
               {items.map((page) => (
                 <Button
-                  onClick={() => scrollTo(page)}
-                  key={page}
+                  onClick={() => scrollTo(page.id)}
+                  key={page.id}
                   sx={{
                     color: "#FFF",
                     fontFamily: "Ubuntu",
@@ -108,7 +126,7 @@ const NavBar = () => {
                     marginRight: "16px",
                   }}
                 >
-                  {page}
+                  {page.title}
                 </Button>
               ))}
             </Box>
@@ -162,8 +180,8 @@ const NavBar = () => {
         {items.map((page, index) => (
           <Fade in={isVisible} mountOnEnter unmountOnExit timeout={index * 100}>
             <Button
-              onClick={() => scrollTo(page)}
-              key={page}
+              onClick={() => scrollTo(page.id)}
+              key={page.id}
               sx={{
                 color: "#FFF",
                 fontFamily: "Ubuntu",
@@ -176,7 +194,7 @@ const NavBar = () => {
                 marginBottom: "16px",
               }}
             >
-              {page}
+              {page.title}
             </Button>
           </Fade>
         ))}

@@ -23,6 +23,7 @@ const StepTextStyle = {
 const GetStarted = () => {
   return (
     <Box
+      id="getStarted"
       sx={{
         marginBottom: "88px",
       }}

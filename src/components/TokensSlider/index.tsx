@@ -82,6 +82,7 @@ const TextToken = ({ number, label }: { number: string; label: string }) => {
 const TokensSlider = () => {
   return (
     <Box
+      id="tokens"
       sx={{
         overflow: "hidden",
         marginBottom: "60px",
@@ -93,6 +94,12 @@ const TokensSlider = () => {
           xs: "200%",
           md: "initial",
         },
+        display: {
+          xs: "block",
+          xl: "flex"
+        },
+        flexDirection: "column",
+        alignItems: "center"
       }}
     >
       <Box
