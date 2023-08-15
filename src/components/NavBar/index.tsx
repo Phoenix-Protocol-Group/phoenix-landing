@@ -11,30 +11,14 @@ import CustomButton from "../Button";
 import { Burger, Logo, LogoSmall } from "../SVG";
 import { useEffect, useState } from "react";
 
-const NavBar = () => {
+const NavBar = ({
+  items,
+  scrollTo
+}: {
+  items: {id: string, title: string}[],
+  scrollTo: (id: string) => void;
+}) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-  const items = [{
-    id: "pools",
-    title: "Pools"
-  }, {
-    id: "tokens",
-    title: "Tokens"
-  }, {
-    id: "about",
-    title: "About"
-  }, {
-    id: "getStarted",
-    title: "Get Started"
-  }]
-
-  const scrollTo = (id: string) => {
-    const yOffset = -120; 
-
-    const element = document.getElementById(id);
-    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({top: y, behavior: 'smooth'});
-  };
 
   const [isVisible, setIsVisible] = useState(false);
 

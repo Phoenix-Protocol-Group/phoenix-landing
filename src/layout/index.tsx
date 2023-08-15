@@ -70,15 +70,37 @@ const theme = createTheme({
   spacing: 8,
 });
 
+const items = [{
+  id: "pools",
+  title: "Pools"
+}, {
+  id: "tokens",
+  title: "Tokens"
+}, {
+  id: "about",
+  title: "About"
+}, {
+  id: "getStarted",
+  title: "Get Started"
+}]
+
 const Layout = ({ children }: { children: any }) => {
+  const scrollTo = (id: string) => {
+    const yOffset = -120; 
+
+    const element = document.getElementById(id);
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({top: y, behavior: 'smooth'});
+  };
+
   return (
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <NavBar />
+        <NavBar items={items} scrollTo={scrollTo} />
         {children}
         <Banner />
-        <Footer />
+        <Footer items={items} scrollTo={scrollTo} />
       </ThemeProvider>
     </>
   );

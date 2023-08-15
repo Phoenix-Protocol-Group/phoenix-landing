@@ -2,7 +2,13 @@ import { Box, Container, Button, Typography } from "@mui/material";
 import CustomButton from "../Button";
 import { Logo } from "../SVG";
 
-const Footer = () => {
+const Footer = ({
+  items,
+  scrollTo
+}: {
+  items: {id: string, title: string}[],
+  scrollTo: (id: string) => void;
+}) => {
   return (
     <Box
       sx={{
@@ -47,9 +53,10 @@ const Footer = () => {
               display: "flex",
             }}
           >
-            {["Tokens", "Features", "Get Started", "Our Team"].map((page) => (
+            {items.map((page) => (
               <Button
-                key={page}
+                onClick={() => scrollTo(page.id)}
+                key={page.id}
                 sx={{
                   color: "#FFF",
                   fontFamily: "Ubuntu",
@@ -57,6 +64,7 @@ const Footer = () => {
                     xs: "12px",
                     md: "14px",
                   },
+                  zIndex: "1",
                   textTransform: "none",
                   fontStyle: "normal",
                   fontWeight: 400,
@@ -68,7 +76,7 @@ const Footer = () => {
                   },
                 }}
               >
-                {page}
+                {page.title}
               </Button>
             ))}
           </Box>
