@@ -14,6 +14,7 @@ const Banner = () => {
             "linear-gradient(137deg, rgba(226, 73, 26, 0.20) 0%, rgba(226, 27, 27, 0.20) 17.08%, rgba(226, 73, 26, 0.20) 42.71%, rgba(226, 170, 27, 0.20) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.03) 100%)",
           backdropFilter: "blur(42px)",
           marginBottom: "48px",
+          marginTop: "80px",
           overflow: "hidden",
         }}
       >

@@ -19,3 +19,33 @@ main {
     min-width: 76px;
   }
 }
+
+ul {
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+ul > li {
+  position: relative;
+  padding-left: 14px;
+  list-style-type: none;
+  color: var(--secondary-s-2, #FFF);
+  opacity: 0.6;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+ul > li::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 16px;
+  border: 1px solid var(--primary-p-3, #E2571C);
+  background: var(--primary-p-220, linear-gradient(97deg, rgba(226, 73, 26, 0.20) 0%, rgba(226, 27, 27, 0.20) 17.23%, rgba(226, 73, 26, 0.20) 43.08%, rgba(226, 170, 27, 0.20) 100.88%));
+}

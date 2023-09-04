@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import "@fontsource/ubuntu";
 import "@fontsource/ubuntu/400.css";
 import "./style.css";
-import Banner from "../components/Banner";
 
 const theme = createTheme({
   palette: {
@@ -89,8 +88,11 @@ const Layout = ({ children }: { children: any }) => {
     const yOffset = -120; 
 
     const element = document.getElementById(id);
-    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({top: y, behavior: 'smooth'});
+
+    if(element) {
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({top: y, behavior: 'smooth'});
+    }
   };
 
   return (
@@ -99,7 +101,6 @@ const Layout = ({ children }: { children: any }) => {
         <CssBaseline />
         <NavBar items={items} scrollTo={scrollTo} />
         {children}
-        <Banner />
         <Footer items={items} scrollTo={scrollTo} />
       </ThemeProvider>
     </>

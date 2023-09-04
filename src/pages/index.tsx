@@ -7,6 +7,9 @@ import TokensSlider from "../components/TokensSlider";
 import TextImage from "../components/TextImage";
 import Divider from "../components/Divider";
 import GetStarted from "../components/GetStarted";
+import Banner from "../components/Banner";
+import Team from "../components/Team";
+
 
 const IndexPage = () => {
   return (
@@ -18,6 +21,9 @@ const IndexPage = () => {
         <TextImage />
         <Divider />
         <GetStarted />
+        <Divider />
+        <Team />
+        <Banner />
       </Layout>
     </main>
   );
