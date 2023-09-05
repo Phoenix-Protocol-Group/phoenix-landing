@@ -41,9 +41,11 @@ const Banner = () => {
           <Box
             sx={{
               position: "relative",
+              width: "100%",
+              height: "100%",
               display: {
                 xs: "none",
-                md: "block%",
+                md: "block",
               },
             }}
           >
@@ -91,8 +93,8 @@ const Banner = () => {
                   sm: "260px",
                   md: "312px",
                 },
-                right: "-20%",
-                top: 0,
+                right: {md: "-22%", lg: "-15%"},
+                top: {md: "-12px", lg: "-28px"},
                 transform: "translateY(-15%)",
               }}
             >
@@ -107,8 +109,8 @@ const Banner = () => {
                   sm: "260px",
                   md: "312px",
                 },
-                bottom: "-40px",
-                transform: "translateY(-15%)",
+                bottom: "0",
+                transform: "translateY(3%)",
               }}
             >
               <LogoT />

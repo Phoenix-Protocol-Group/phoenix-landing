@@ -1,6 +1,8 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 
-import teamMember from "../../images/teamMember.jpeg";
+import milan from "../../images/milan.jpg";
+import jakub from "../../images/jakub.jpeg";
+import douglas from "../../images/douglas.jpg";
 
 const memberImageStyle = {
   maxWidth: "100%",
@@ -24,9 +26,11 @@ const tagStyle = {
   background:
     "var(--primary-p-220, linear-gradient(97deg, rgba(226, 73, 26, 0.20) 0%, rgba(226, 27, 27, 0.20) 17.23%, rgba(226, 73, 26, 0.20) 43.08%, rgba(226, 170, 27, 0.20) 100.88%))",
   display: "inline-flex",
-  padding: "8px 18px",
+  padding: "8px 12px",
   alignItems: "center",
-  gap: "8px",
+  fontSize: "12px",
+  marginBottom: "8px",
+  marginRight: "8px"
 };
 
 const Team = () => {
@@ -53,12 +57,14 @@ const Team = () => {
             }}
           >
             <Grid item xs={12}>
-            <Box sx={{
-                display: {
-                  xs: "block",
-                  lg: "none"
-                }
-              }}>
+              <Box
+                sx={{
+                  display: {
+                    xs: "block",
+                    lg: "none",
+                  },
+                }}
+              >
                 <Box
                   sx={{
                     display: "inline-flex",
@@ -103,44 +109,62 @@ const Team = () => {
                     fontWeight: 400,
                     lineHeight: "140%",
                     opacity: 0.6,
-                    marginBottom: "32px"
+                    marginBottom: "32px",
                   }}
                 >
-                  We envision more products and applications to be launched by Phoenix in the future
+                  We envision more products and applications to be launched by
+                  Phoenix in the future
                 </Typography>
               </Box>
             </Grid>
             <Grid item xs={12} md={4}>
-              <Box component="img" sx={memberImageStyle} src={teamMember} />
+              <Box component="img" sx={memberImageStyle} src={milan} />
               <Typography sx={headerStyle}>Milan Steiner</Typography>
-              <Box sx={tagStyle}>Front End</Box>
+              <Box sx={{
+                display: "flex",
+                flexWrap: "wrap"
+              }}>
+                <Box sx={tagStyle}>Co-Founder</Box>
+                <Box sx={tagStyle}>Front End</Box>
+              </Box>
               <ul>
                 <li>6+ years of experience as a developer</li>
-                <li>6+ years of experience as a developer</li>
-                <li>6+ years of experience as a developer</li>
-                <li>6+ years of experience as a developer</li>
+                <li>2 years of experience in the blockchain industry</li>
+                <li>Winner of HackAtom 2021</li>
+                <li>Maintainer of libraries for CosmJS, created CosmWasmJS</li>
               </ul>
             </Grid>
             <Grid item xs={12} md={4}>
-              <Box component="img" sx={memberImageStyle} src={teamMember} />
-              <Typography sx={headerStyle}>Milan Steiner</Typography>
-              <Box sx={tagStyle}>Front End</Box>
+              <Box component="img" sx={memberImageStyle} src={jakub} />
+              <Typography sx={headerStyle}>Jakub Bogucki</Typography>
+              <Box sx={{
+                display: "flex",
+                flexWrap: "wrap"
+              }}>
+                <Box sx={tagStyle}>Co-Founder</Box>
+                <Box sx={tagStyle}>Back End</Box>
+              </Box>
               <ul>
-                <li>6+ years of experience as a developer</li>
-                <li>6+ years of experience as a developer</li>
-                <li>6+ years of experience as a developer</li>
-                <li>6+ years of experience as a developer</li>
+                <li>
+                  9+ years of experience in IT using Rust, C++, C, Python &
+                  Javascript
+                </li>
+                <li>
+                  2 years of experience in crypto as Rust Smart Contract
+                  developer
+                </li>
+                <li>
+                  Worked on various Tgrade (PoE), lending protocol for Osmosis,
+                  DEXs, LSD
+                </li>
               </ul>
             </Grid>
             <Grid item xs={12} md={4}>
-              <Box component="img" sx={memberImageStyle} src={teamMember} />
-              <Typography sx={headerStyle}>Milan Steiner</Typography>
+              <Box component="img" sx={memberImageStyle} src={douglas} />
+              <Typography sx={headerStyle}>Douglas Voss</Typography>
               <Box sx={tagStyle}>Front End</Box>
               <ul>
-                <li>6+ years of experience as a developer</li>
-                <li>6+ years of experience as a developer</li>
-                <li>6+ years of experience as a developer</li>
-                <li>6+ years of experience as a developer</li>
+                <li>5+ years of experience in web-development and design</li>
               </ul>
             </Grid>
           </Grid>
@@ -156,8 +180,8 @@ const Team = () => {
             },
             display: {
               xs: "none",
-              lg: "block"
-            }
+              lg: "block",
+            },
           }}
         >
           <Box
