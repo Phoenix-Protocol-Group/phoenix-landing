@@ -1,6 +1,0 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" data-id="svg-eWVu" class="asset__icon" width="24" height="24"><defs><symbol id="yen" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="16" cy="16" r="12" fill="#33296A"></circle>
-      <path d="M14.624 22V19.169H10V17.9296H14.624V16.1338H10V14.9014H14.3166L10.3981 9H13.3597L16.007 13.4718L18.6612 9H21.6019L17.6903 14.9014H22V16.1338H17.39V17.9296H22V19.169H17.39V22H14.624Z" fill="#BAACEC"></path>
-    </symbol></defs>
-        <use xlink:href="#yen"></use>
-      </svg>

@@ -7,38 +7,31 @@ import binance from "../../images/anchors/binance_icon.webp"
 import bitfinex from "../../images/anchors/bitfinex-icon-1.webp"
 import bitso from "../../images/anchors/bitso.webp"
 import coinbase from "../../images/anchors/coinbase-icon.webp"
-import coincheck from "../../images/anchors/coincheck-icon.webp"
 import crypto from "../../images/anchors/crypto-com-icon.webp"
 import digitra from "../../images/anchors/digitra.webp"
 import flutterwave from "../../images/anchors/flutterwave.webp"
 import kraken from "../../images/anchors/kraken.webp"
-import link from "../../images/anchors/link.webp"
 import tempo from "../../images/anchors/tempo.webp"
 
-import svg4 from "../../assets/tokens/svgexport-4.svg";
-import svg5 from "../../assets/tokens/svgexport-5.svg";
-import svg6 from "../../assets/tokens/svgexport-6.svg";
-import svg7 from "../../assets/tokens/svgexport-7.svg";
-import svg8 from "../../assets/tokens/svgexport-8.svg";
-import svg9 from "../../assets/tokens/svgexport-9.svg";
-import svg11 from "../../assets/tokens/svgexport-11.svg";
-import svg12 from "../../assets/tokens/svgexport-12.svg";
-import svg13 from "../../assets/tokens/svgexport-13.svg";
-import svg14 from "../../assets/tokens/svgexport-14.svg";
-import svg15 from "../../assets/tokens/svgexport-15.svg";
-import svg16 from "../../assets/tokens/svgexport-16.svg";
-import svg17 from "../../assets/tokens/svgexport-17.svg";
-import svg18 from "../../assets/tokens/svgexport-18.svg";
-import svg19 from "../../assets/tokens/svgexport-19.svg";
-import svg20 from "../../assets/tokens/svgexport-20.svg";
-import svg21 from "../../assets/tokens/svgexport-21.svg";
-import svg22 from "../../assets/tokens/svgexport-22.svg";
-import svg23 from "../../assets/tokens/svgexport-23.svg";
-import svg24 from "../../assets/tokens/svgexport-24.svg";
-import svg25 from "../../assets/tokens/svgexport-25.svg";
-import svg26 from "../../assets/tokens/svgexport-26.svg";
-import svg27 from "../../assets/tokens/svgexport-27.svg";
-import svg28 from "../../assets/tokens/svgexport-28.svg";
+import btc from "../../images/crypto/btc.png";
+import eth from "../../images/crypto/eth.png";
+import atom from "../../images/crypto/atom.png";
+import monero from "../../images/crypto/xmr.png";
+import xrp from "../../images/crypto/xrp.png";
+import dash from "../../images/crypto/dash.png";
+import stellar from "../../images/crypto/xlm.png";
+import vibe from "../../images/crypto/vibe.png";
+import salt from "../../images/crypto/salt.png";
+
+import eur from "../../images/fiat/svgexport-13.png";
+import usd from "../../images/fiat/svgexport-11.png";
+import gbp from "../../images/fiat/svgexport-14.png";
+import twd from "../../images/fiat/svgexport-21.png";
+import ars from "../../images/fiat/svgexport-1.png";
+import brl from "../../images/fiat/svgexport-2.png";
+import kes from "../../images/fiat/svgexport-15.png";
+import krw from "../../images/fiat/svgexport-16.png";
+import php from "../../images/fiat/svgexport-18.png";
 
 
 const tokensRowStyle = {
@@ -64,26 +57,6 @@ const Token = ({ Icon }: { Icon: any }) => {
       }}
     >
       <img src={Icon}/>
-    </Box>
-  );
-};
-
-const SvgToken = ({ Icon }: { Icon: any }) => {
-  return (
-    <Box
-      className="token"
-      sx={{
-        borderRadius: "16px",
-        padding: {
-          xs: "20px 24px",
-          md: "13px 26px",
-        },
-        background:
-          "var(--secondary-s-3, linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.03) 100%))",
-        backdropFilter: "blur(42px)",
-      }}
-    >
-      <Icon />
     </Box>
   );
 };
@@ -147,12 +120,13 @@ const TokensSlider = () => {
         overflow: "hidden",
         marginBottom: "60px",
         transform: {
-          xs: "translateX(-23%)",
-          md: "unset",
+          xs: "translateX(-25%)",
+          sm: "translateX(5%)",
+          lg: "unset"
         },
         width: {
           xs: "200%",
-          md: "initial",
+          sm: "100%",
         },
         display: {
           xs: "block",
@@ -163,16 +137,20 @@ const TokensSlider = () => {
       }}
     >
       <Box
+        className="anchors"
         sx={{
-          left: "-116px",
+          left: {
+            xs: "-80px",
+            lg: "-116px"
+          },
           ...tokensRowStyle,
         }}
       >
         <Token Icon={cex} />
         <Token Icon={kado} />
         <Token Icon={alchemyPay} />
-        <TextToken number="24+" label="anchors" />
         <Token Icon={binance} />
+        <TextToken number="24+" label="anchors" />
         <Token Icon={coinbase} />
         <Token Icon={tempo} />
         <Token Icon={digitra} />
@@ -183,41 +161,44 @@ const TokensSlider = () => {
         <Token Icon={crypto} />
       </Box>
       <Box
+        className="crypto"
         sx={{
-          left: "-48px",
+          left: {
+            xs: "-10px",
+            lg: "-48px"
+          },
           ...tokensRowStyle
         }}>
-          <SvgToken Icon={svg4}/>
-          <SvgToken Icon={svg17}/>
-          <SvgToken Icon={svg16}/>
-          <SvgToken Icon={svg7}/>
-          <SvgToken Icon={svg8}/>
-          <SvgToken Icon={svg20}/>
+          <Token Icon={btc}/>
+          <Token Icon={eth}/>
+          <Token Icon={atom}/>
+          <Token Icon={monero}/>
           <TextToken number="16+" label="crypto" />
-          <SvgToken Icon={svg12}/>
-          <SvgToken Icon={svg13}/>
-          <SvgToken Icon={svg14}/>
-          <SvgToken Icon={svg15}/>
-          <SvgToken Icon={svg16}/>
+          <Token Icon={xrp}/>
+          <Token Icon={dash}/>
+          <Token Icon={stellar}/>
+          <Token Icon={vibe}/>
+          <Token Icon={salt}/>
       </Box>
       <Box
+        className="fiat"
         sx={{
-          left: "8px",
+          left: {
+            xs: "0",
+            lg: "8px"
+          },
           ...tokensRowStyle
-        }}
-      >
-        <SvgToken Icon={svg6}/>
+        }}>
+        <Token Icon={eur}/>
+        <Token Icon={usd}/>
         <TextToken number="10+" label="fiat" />
-        <SvgToken Icon={svg19}/>
-        <SvgToken Icon={svg9}/>
-        <SvgToken Icon={svg21}/>
-        <SvgToken Icon={svg22}/>
-        <SvgToken Icon={svg23}/>
-        <SvgToken Icon={svg24}/>
-        <SvgToken Icon={svg25}/>
-        <SvgToken Icon={svg26}/>
-        <SvgToken Icon={svg27}/>
-        <SvgToken Icon={svg28}/>
+        <Token Icon={gbp}/>
+        <Token Icon={twd}/>
+        <Token Icon={ars}/>
+        <Token Icon={brl}/>
+        <Token Icon={kes}/>
+        <Token Icon={krw}/>
+        <Token Icon={php}/>
       </Box>
     </Box>
   );

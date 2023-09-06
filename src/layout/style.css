@@ -50,7 +50,35 @@ ul > li::before {
   background: var(--primary-p-220, linear-gradient(97deg, rgba(226, 73, 26, 0.20) 0%, rgba(226, 27, 27, 0.20) 17.23%, rgba(226, 73, 26, 0.20) 43.08%, rgba(226, 170, 27, 0.20) 100.88%));
 }
 
-.token svg {
-  width: 108px;
-  height: 108px;
+.crypto .token img {
+  position: relative;
+  top: 6px;
+  max-width: 52px;
+}
+
+.anchors .token img {
+  max-width: 52px;
+}
+
+.fiat .token {
+  padding: 10px 14px;
+}
+
+.fiat .token img {
+  max-width: 74px;
+}
+
+@media (min-width: 900px) {
+  .crypto .token img {
+    position: relative;
+    top: 6px;
+  }
+
+  .fiat .token {
+    padding: 16px 29px;
+  }
+
+  .fiat .token img {
+    max-width: 102px;
+  }
 }

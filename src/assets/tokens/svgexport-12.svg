@@ -1,6 +1,0 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" data-id="svg-bGl0ZWNvaW4=" class="asset__icon" width="24" height="24"><defs><symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="litecoin">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 28C9.37225 28 4 22.6277 4 16C4 9.37225 9.37225 4 16 4C22.6277 4 28 9.37225 28 16C28 22.6277 22.6277 28 16 28Z" fill="#33296A"></path>
-      <path d="M10.939 22L11.8203 18.4105L10.75 18.826L11.266 16.7568L12.349 16.3218L13.9098 10H17.7565L16.6172 14.647L17.6747 14.2188L17.1647 16.2812L16.0945 16.7095L15.4585 19.3218H21.25L20.5953 22H10.939Z" fill="#BAACEC"></path>
-    </symbol></defs>
-        <use xlink:href="#litecoin"></use>
-      </svg>

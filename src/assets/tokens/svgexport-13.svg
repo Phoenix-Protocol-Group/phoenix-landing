@@ -1,6 +1,0 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" data-id="svg-bmdu" class="asset__icon" width="24" height="24"><defs><symbol id="ngn" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="16" cy="16" r="12" fill="#33296A"></circle>
-      <path d="M16.3774 18.0802H13.872V22H11.5418V18.0802H10V16.533H11.5418V15.3639H10V13.8166H11.5418V10H14.5903L16.5526 13.8166H19.1456V10H21.4407V13.8166H23V15.3639H21.4407V16.533H23V18.0802H21.4407V22H18.3747L16.3774 18.0802ZM15.624 16.6017L13.9245 13.1633H13.872V16.6017H15.624ZM19.093 18.8367H19.1456V15.2951H17.3234L19.093 18.8367Z" fill="#BAACEC"></path>
-    </symbol></defs>
-        <use xlink:href="#ngn"></use>
-      </svg>

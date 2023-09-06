@@ -1,6 +1,0 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" data-id="svg-ZXRoZXJldW0=" class="asset__icon" width="24" height="24"><defs><symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="ethereum">
-      <circle cx="16" cy="16" r="12" fill="#33296A"></circle>
-      <path d="M15.9631 20.1054L11 17.1764L15.9601 24.1687L20.9257 17.1764L15.9601 20.1054H15.9631ZM16.0369 8L11.0758 16.2341L16.0369 19.1681L21 16.2372L16.0369 8Z" fill="#BAACEC"></path>
-    </symbol></defs>
-        <use xlink:href="#ethereum"></use>
-      </svg>
