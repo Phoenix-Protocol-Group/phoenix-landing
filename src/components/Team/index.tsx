@@ -154,8 +154,7 @@ const Team = () => {
                   developer
                 </li>
                 <li>
-                  Worked on various Tgrade (PoE), lending protocol for Osmosis,
-                  DEXs, LSD
+                  Worked on various projects, such as Tgrade (PoE), lending protocol for Osmosis, DEXs, LSD
                 </li>
               </ul>
             </Grid>
