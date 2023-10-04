@@ -4,9 +4,9 @@ import {
   Button,
   Container,
   IconButton,
-  Toolbar,
-  Fade
+  Toolbar
 } from "@mui/material";
+import { Fade } from "react-awesome-reveal";
 import CustomButton from "../Button";
 import { Burger, Logo, LogoSmall } from "../SVG";
 import { useEffect, useState } from "react";
@@ -64,16 +64,18 @@ const NavBar = ({
               },
             }}
           >
-            <Box
-              sx={{
-                display: {
-                  xs: "none",
-                  md: "block",
-                },
-              }}
-            >
-              <Logo />
-            </Box>
+            <Fade direction="down">
+              <Box
+                sx={{
+                  display: {
+                    xs: "none",
+                    md: "block",
+                  },
+                }}
+              >
+                <Logo />
+              </Box>
+            </Fade>
             <Box
               sx={{
                 display: {
@@ -94,25 +96,27 @@ const NavBar = ({
                 },
               }}
             >
-              {items.map((page) => (
-                <Button
-                  onClick={() => scrollTo(page.id)}
-                  key={page.id}
-                  sx={{
-                    color: "#FFF",
-                    fontFamily: "Ubuntu",
-                    fontSize: "14px",
-                    textTransform: "none",
-                    fontStyle: "normal",
-                    fontWeight: 400,
-                    lineHeight: "20px",
-                    opacity: "0.6000000238418579",
-                    marginRight: "16px",
-                  }}
-                >
-                  {page.title}
-                </Button>
-              ))}
+              <Fade cascade triggerOnce direction="down" delay={400} damping={0.2}>
+                {items.map((page, index) => (
+                  <Button
+                    onClick={() => scrollTo(page.id)}
+                    key={page.id}
+                    sx={{
+                      color: "#FFF",
+                      fontFamily: "Ubuntu",
+                      fontSize: "14px",
+                      textTransform: "none",
+                      fontStyle: "normal",
+                      fontWeight: 400,
+                      lineHeight: "20px",
+                      opacity: "0.6000000238418579",
+                      marginRight: "16px",
+                    }}
+                  >
+                    {page.title}
+                  </Button>
+                ))}
+              </Fade>
             </Box>
             <Box
               sx={{
@@ -123,14 +127,16 @@ const NavBar = ({
                 },
               }}
             >
-              <CustomButton
-                style={{
-                  padding: {
-                    xs: "16px 24px",
-                  },
-                }}
-                label="Launch App"
-              />
+              <Fade triggerOnce direction="down" delay={1000}>
+                <CustomButton
+                  style={{
+                    padding: {
+                      xs: "16px 24px",
+                    },
+                  }}
+                  label="Launch App"
+                />
+              </Fade>
               <IconButton
                 onClick={() => setIsDrawerOpen(!isDrawerOpen)}
                 sx={{
@@ -161,26 +167,24 @@ const NavBar = ({
           padding: "32px 0",
         }}
       >
-        {items.map((page, index) => (
-          <Fade in={isVisible} mountOnEnter unmountOnExit timeout={index * 100}>
-            <Button
-              onClick={() => scrollTo(page.id)}
-              key={page.id}
-              sx={{
-                color: "#FFF",
-                fontFamily: "Ubuntu",
-                fontSize: "24px",
-                textTransform: "none",
-                fontStyle: "normal",
-                fontWeight: 400,
-                lineHeight: "20px",
-                opacity: "0.6000000238418579",
-                marginBottom: "16px",
-              }}
-            >
-              {page.title}
-            </Button>
-          </Fade>
+        {items.map((page) => (
+          <Button
+            onClick={() => scrollTo(page.id)}
+            key={page.id}
+            sx={{
+              color: "#FFF",
+              fontFamily: "Ubuntu",
+              fontSize: "24px",
+              textTransform: "none",
+              fontStyle: "normal",
+              fontWeight: 400,
+              lineHeight: "20px",
+              opacity: "0.6000000238418579",
+              marginBottom: "16px",
+            }}
+          >
+            {page.title}
+          </Button>
         ))}
       </Box>
     </Box>

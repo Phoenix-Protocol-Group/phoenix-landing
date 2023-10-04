@@ -2,6 +2,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import LowFees from "../../images/lowFees.png";
 import EarnIncentives from "../../images/earnIncentives.png";
 import UserExperience from "../../images/userExperience.png";
+import { Fade } from "react-awesome-reveal";
 
 const BoxTextStyle = {
   color: "#FFF",
@@ -53,20 +54,24 @@ const TextImage = () => {
               flexDirection: "column",
             }}
           >
-            <Box sx={BoxStyle}>
-              <Typography typography="h2">
-                Super{" "}
-                <Typography typography="h2" sx={styledHeaderStyle}>
-                  low fees
+            <Fade direction="left">
+              <Box sx={BoxStyle}>
+                <Typography typography="h2">
+                  Super{" "}
+                  <Typography typography="h2" sx={styledHeaderStyle}>
+                    low fees
+                  </Typography>
                 </Typography>
-              </Typography>
-              <Typography sx={BoxTextStyle}>
-                We collect street food level fees so you can keep your wallet more full
-              </Typography>
-            </Box>
+                <Typography sx={BoxTextStyle}>
+                  We collect street food level fees so you can keep your wallet more full
+                </Typography>
+              </Box>
+            </Fade>
           </Grid>
           <Grid item xs={12} md={6}>
-            <img src={LowFees} />
+            <Fade direction="right">
+              <img src={LowFees} />
+            </Fade>
           </Grid>
         </Grid>
         <Grid container sx={{
@@ -77,7 +82,9 @@ const TextImage = () => {
           }
         }}>
           <Grid item xs={12} md={6}>
-            <img src={EarnIncentives} />
+            <Fade direction="left">
+              <img src={EarnIncentives} />
+            </Fade>
           </Grid>
           <Grid
             item
@@ -88,17 +95,19 @@ const TextImage = () => {
               flexDirection: "column",
             }}
           >
-            <Box sx={BoxStyle}>
-              <Typography typography="h2">
-                Earn{" "}
-                <Typography typography="h2" sx={styledHeaderStyle}>
-                  incentives
+            <Fade direction="right">
+              <Box sx={BoxStyle}>
+                <Typography typography="h2">
+                  Earn{" "}
+                  <Typography typography="h2" sx={styledHeaderStyle}>
+                    incentives
+                  </Typography>
                 </Typography>
-              </Typography>
-              <Typography sx={BoxTextStyle}>
-                Tasty and creative incentives that will make your mouth water
-              </Typography>
-            </Box>
+                <Typography sx={BoxTextStyle}>
+                  Tasty and creative incentives that will make your mouth water
+                </Typography>
+              </Box>
+            </Fade>
           </Grid>
         </Grid>
         <Grid container>
@@ -112,20 +121,24 @@ const TextImage = () => {
               flexDirection: "column",
             }}
           >
-            <Box sx={BoxStyle}>
-              <Typography typography="h2">
-                <Typography typography="h2" sx={styledHeaderStyle}>
-                  Variety
+            <Fade direction="left">
+              <Box sx={BoxStyle}>
+                <Typography typography="h2">
+                  <Typography typography="h2" sx={styledHeaderStyle}>
+                    Variety
+                  </Typography>
+                  {" "}of Pairs
                 </Typography>
-                {" "}of Pairs
-              </Typography>
-              <Typography sx={BoxTextStyle}>
-                A vast menu of trading pairs with new pairs added frequently to keep things fresh!
-              </Typography>
-            </Box>
+                <Typography sx={BoxTextStyle}>
+                  A vast menu of trading pairs with new pairs added frequently to keep things fresh!
+                </Typography>
+              </Box>
+            </Fade>
           </Grid>
           <Grid item xs={12} md={6}>
-            <img src={UserExperience} />
+            <Fade direction="right">
+              <img src={UserExperience} />
+            </Fade>
           </Grid>
         </Grid>
       </Container>

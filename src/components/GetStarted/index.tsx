@@ -1,4 +1,5 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
+import { Fade } from "react-awesome-reveal";
 
 const StepHeaderStyle = {
   color: "#FFF",
@@ -60,22 +61,28 @@ const GetStarted = () => {
         </Typography>
         <Grid container spacing={10}>
           <Grid item md={4}>
-            <Typography sx={StepHeaderStyle}>Step 1</Typography>
-            <Typography sx={StepTextStyle}>
-              Install a wallet to your browser, such as Freighter wallet
-            </Typography>
+            <Fade direction="up" delay={200}>
+              <Typography sx={StepHeaderStyle}>Step 1</Typography>
+              <Typography sx={StepTextStyle}>
+                Install a wallet to your browser, such as Freighter wallet
+              </Typography>
+            </Fade>
           </Grid>
           <Grid item md={4}>
-            <Typography sx={StepHeaderStyle}>Step 2</Typography>
-            <Typography sx={StepTextStyle}>
-              Send some XLM to wallet address, such as from a centralized exchange or request some from a faucet
-            </Typography>
+            <Fade direction="up" delay={400}>
+              <Typography sx={StepHeaderStyle}>Step 2</Typography>
+              <Typography sx={StepTextStyle}>
+                Send some XLM to wallet address, such as from a centralized exchange or request some from a faucet
+              </Typography>
+            </Fade>
           </Grid>
           <Grid item md={4}>
-            <Typography sx={StepHeaderStyle}>Step 3</Typography>
-            <Typography sx={StepTextStyle}>
-            Connect your wallet with Phoenix Defi Hub!
-            </Typography>
+            <Fade direction="up" delay={600}>
+              <Typography sx={StepHeaderStyle}>Step 3</Typography>
+              <Typography sx={StepTextStyle}>
+              Connect your wallet with Phoenix Defi Hub!
+              </Typography>
+            </Fade>
           </Grid>
         </Grid>
       </Container>

@@ -3,6 +3,7 @@ import Button from "../Button";
 import BackgroundImage from "../../images/hero.png";
 import BackgroundImageMobile from "../../images/heroMobile.png";
 import LiquidityPreview from "../../images/liquidityPreview.png";
+import { Fade } from "react-awesome-reveal";
 
 const BoxStyle = {
   borderRadius: "16px",
@@ -96,75 +97,82 @@ const Hero = () => {
           }}
         >
           <Grid item xs={12} sm={6}>
-            <Typography
-              typography="h1"
-              sx={{
-                textAlign: {
-                  xs: "center",
-                  sm: "left",
-                },
-              }}
-            >
-              DeFi Hub
-            </Typography>
-            <Box
-              sx={{
-                display: "flex",
-                marginBottom: "20px",
-                justifyContent: {
-                  xs: "center",
-                  sm: "flex-start",
-                },
-              }}
-            >
-              <Typography typography="h1">on</Typography>
+            <Fade direction="left" triggerOnce delay={600}>
               <Typography
                 typography="h1"
                 sx={{
-                  background:
-                    "-webkit-linear-gradient(97.01deg, #E2491A 0%, #E21B1B 17.23%, #E2491A 43.08%, #E2AA1B 100.88%),\nlinear-gradient(0deg, #FFFFFF, #FFFFFF)",
-                  WebkitBackgroundClip: "text",
-                  fontWeight: 700,
-                  WebkitTextFillColor: "transparent",
+                  textAlign: {
+                    xs: "center",
+                    sm: "left",
+                  },
                 }}
               >
-                &nbsp;Soroban
+                DeFi Hub
               </Typography>
-            </Box>
-            <Typography
-              sx={{
-                color: "#FFF",
-                fontFamily: "Ubuntu",
-                fontSize: "18px",
-                fontStyle: "normal",
-                fontWeight: 400,
-                lineHeight: "140%",
-                marginBottom: "30px",
-                padding: {
-                  xs: 0,
-                  md: "0 8px",
-                },
-              }}
-            >
-              The serving you the tastiest gains in DeFi
-            </Typography>
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: {
-                  xs: "space-around",
-                  sm: "flex-start",
-                },
-              }}
-            >
-              <Button
-                style={{
-                  marginRight: "16px",
+            </Fade>
+            <Fade direction="left" triggerOnce delay={800}>
+              <Box
+                sx={{
+                  display: "flex",
+                  marginBottom: "20px",
+                  justifyContent: {
+                    xs: "center",
+                    sm: "flex-start",
+                  },
                 }}
-                label="Launch App"
-              />
-              <Button type="secondary" label="Learn more" />
-            </Box>
+              >
+                <Typography typography="h1">on</Typography>
+                <Typography
+                  typography="h1"
+                  sx={{
+                    background:
+                      "-webkit-linear-gradient(97.01deg, #E2491A 0%, #E21B1B 17.23%, #E2491A 43.08%, #E2AA1B 100.88%),\nlinear-gradient(0deg, #FFFFFF, #FFFFFF)",
+                    WebkitBackgroundClip: "text",
+                    fontWeight: 700,
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  &nbsp;Soroban
+                </Typography>
+              </Box>
+            </Fade>
+            <Fade direction="left" triggerOnce delay={1000}>
+              <Typography
+                sx={{
+                  color: "#FFF",
+                  fontFamily: "Ubuntu",
+                  fontSize: "18px",
+                  fontStyle: "normal",
+                  fontWeight: 400,
+                  lineHeight: "140%",
+                  marginBottom: "30px",
+                  padding: {
+                    xs: 0,
+                    md: "0 8px",
+                  },
+                }}
+              >
+                The serving you the tastiest gains in DeFi
+              </Typography>
+            
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: {
+                    xs: "space-around",
+                    sm: "flex-start",
+                  },
+                }}
+              >
+                <Button
+                  style={{
+                    marginRight: "16px",
+                  }}
+                  label="Launch App"
+                />
+                <Button type="secondary" label="Learn more" />
+              </Box>
+            </Fade>
           </Grid>
           <Grid
             item

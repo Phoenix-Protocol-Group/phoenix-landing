@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Fade, Grid, Typography } from "@mui/material";
 
 import milan from "../../images/milan.jpg";
 import jakub from "../../images/jakub.jpeg";

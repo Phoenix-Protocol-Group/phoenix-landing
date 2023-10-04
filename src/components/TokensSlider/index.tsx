@@ -32,6 +32,7 @@ import brl from "../../images/fiat/svgexport-2.png";
 import kes from "../../images/fiat/svgexport-15.png";
 import krw from "../../images/fiat/svgexport-16.png";
 import php from "../../images/fiat/svgexport-18.png";
+import { Slide } from "react-awesome-reveal";
 
 
 const tokensRowStyle = {
@@ -53,7 +54,7 @@ const Token = ({ Icon }: { Icon: any }) => {
         },
         background:
           "var(--secondary-s-3, linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.03) 100%))",
-        backdropFilter: "blur(42px)",
+        backdropFilter: "blur(42px)"
       }}
     >
       <img src={Icon}/>
@@ -70,6 +71,7 @@ const TextToken = ({ number, label }: { number: string; label: string }) => {
           xs: "27px",
           md: "23px",
         },
+        height: "100%",
         minWidth: { xs: "100px", md: "160px" },
         border: "1px solid var(--primary-p-3, #E2571C)",
         background:
@@ -146,19 +148,21 @@ const TokensSlider = () => {
           ...tokensRowStyle,
         }}
       >
-        <Token Icon={cex} />
-        <Token Icon={kado} />
-        <Token Icon={alchemyPay} />
-        <Token Icon={binance} />
-        <TextToken number="24+" label="anchors" />
-        <Token Icon={coinbase} />
-        <Token Icon={tempo} />
-        <Token Icon={digitra} />
-        <Token Icon={bitfinex} />
-        <Token Icon={flutterwave} />
-        <Token Icon={bitso} />
-        <Token Icon={kraken} />
-        <Token Icon={crypto} />
+        <Slide direction="left" triggerOnce>
+          <Token Icon={cex} />
+          <Token Icon={kado} />
+          <Token Icon={alchemyPay} />
+          <Token Icon={binance} />
+          <TextToken number="24+" label="anchors" />
+          <Token Icon={coinbase} />
+          <Token Icon={tempo} />
+          <Token Icon={digitra} />
+          <Token Icon={bitfinex} />
+          <Token Icon={flutterwave} />
+          <Token Icon={bitso} />
+          <Token Icon={kraken} />
+          <Token Icon={crypto} />
+        </Slide>
       </Box>
       <Box
         className="crypto"
@@ -169,16 +173,18 @@ const TokensSlider = () => {
           },
           ...tokensRowStyle
         }}>
-          <Token Icon={btc}/>
-          <Token Icon={eth}/>
-          <Token Icon={atom}/>
-          <Token Icon={monero}/>
-          <TextToken number="16+" label="crypto" />
-          <Token Icon={xrp}/>
-          <Token Icon={dash}/>
-          <Token Icon={stellar}/>
-          <Token Icon={vibe}/>
-          <Token Icon={salt}/>
+          <Slide direction="right" triggerOnce>
+            <Token Icon={btc}/>
+            <Token Icon={eth}/>
+            <Token Icon={atom}/>
+            <Token Icon={monero}/>
+            <TextToken number="16+" label="crypto" />
+            <Token Icon={xrp}/>
+            <Token Icon={dash}/>
+            <Token Icon={stellar}/>
+            <Token Icon={vibe}/>
+            <Token Icon={salt}/>
+          </Slide>
       </Box>
       <Box
         className="fiat"
@@ -189,16 +195,18 @@ const TokensSlider = () => {
           },
           ...tokensRowStyle
         }}>
-        <Token Icon={eur}/>
-        <Token Icon={usd}/>
-        <TextToken number="10+" label="fiat" />
-        <Token Icon={gbp}/>
-        <Token Icon={twd}/>
-        <Token Icon={ars}/>
-        <Token Icon={brl}/>
-        <Token Icon={kes}/>
-        <Token Icon={krw}/>
-        <Token Icon={php}/>
+          <Slide direction="left" triggerOnce>
+            <Token Icon={eur}/>
+            <Token Icon={usd}/>
+            <TextToken number="10+" label="fiat" />
+            <Token Icon={gbp}/>
+            <Token Icon={twd}/>
+            <Token Icon={ars}/>
+            <Token Icon={brl}/>
+            <Token Icon={kes}/>
+            <Token Icon={krw}/>
+            <Token Icon={php}/>
+        </Slide>
       </Box>
     </Box>
   );
