@@ -70,9 +70,6 @@ const theme = createTheme({
 });
 
 const items = [{
-  id: "tokens",
-  title: "Tokens"
-}, {
   id: "about",
   title: "About"
 }, {
