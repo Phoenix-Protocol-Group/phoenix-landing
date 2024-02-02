@@ -13,55 +13,55 @@ const RoadMapItem = ({
 }) => {
   return (
     <Grid item xs={12} md={3}>
-      <Fade direction="up" delay={100 * quartal}>
-      <Box
-        sx={{
-          width: "100%",
-          height: {
-            xs: "1px",
-            md: "36px"
-          },
-          background:
-            "linear-gradient(269.82deg, #FCCD15 0%, #FC941A 27.06%, #FC3E28 61.18%, #9D1432 100%)",
-          marginTop: {
-            xs: "0",
-            md: (-1 * quartal * 36).toString() + "px",
-          },
-        }}
-      />
-      <Box p={3}>
+      <Fade direction="up" delay={100 * quartal} cascade={false}>
         <Box
-          mb={3}
           sx={{
-            display: "inline-block",
-            p: "4px 8px",
+            width: "100%",
+            height: {
+              xs: "1px",
+              md: "36px",
+            },
             background:
-              "linear-gradient(97.01deg, #E2491A 0%, #E21B1B 17.23%, #E2491A 43.08%, #E2AA1B 100.88%)",
-            fontFamily: "Ubuntu",
-            fontSize: "32px",
-            fontWeight: "700",
-            lineHeight: "38px",
-            letterSpacing: "0em",
-            color: "#131517",
+              "linear-gradient(269.82deg, #FCCD15 0%, #FC941A 27.06%, #FC3E28 61.18%, #9D1432 100%)",
+            marginTop: {
+              xs: "0",
+              md: (-1 * quartal * 36).toString() + "px",
+            },
           }}
-        >
-          Q{quartal + 1}
+        />
+        <Box p={3}>
+          <Box
+            mb={3}
+            sx={{
+              display: "inline-block",
+              p: "4px 8px",
+              background:
+                "linear-gradient(97.01deg, #E2491A 0%, #E21B1B 17.23%, #E2491A 43.08%, #E2AA1B 100.88%)",
+              fontFamily: "Ubuntu",
+              fontSize: "32px",
+              fontWeight: "700",
+              lineHeight: "38px",
+              letterSpacing: "0em",
+              color: "#131517",
+            }}
+          >
+            Q{quartal + 1}
+          </Box>
+          <Typography
+            mb={3}
+            sx={{
+              color: "var(--secondary-s-2, #FFF)",
+              fontFamily: "Ubuntu",
+              fontSize: "24px",
+              fontStyle: "normal",
+              fontWeight: 700,
+              lineHeight: "normal",
+            }}
+          >
+            {title}
+          </Typography>
+          <Typography mb={3}>{description}</Typography>
         </Box>
-        <Typography
-          mb={3}
-          sx={{
-            color: "var(--secondary-s-2, #FFF)",
-            fontFamily: "Ubuntu",
-            fontSize: "24px",
-            fontStyle: "normal",
-            fontWeight: 700,
-            lineHeight: "normal",
-          }}
-        >
-          {title}
-        </Typography>
-        <Typography mb={3}>{description}</Typography>
-      </Box>
       </Fade>
     </Grid>
   );
@@ -69,19 +69,21 @@ const RoadMapItem = ({
 
 const Roadmap = () => {
   return (
-    <Box sx={{
-      position: "relative"
-    }}>
+    <Box
+      sx={{
+        position: "relative",
+      }}
+    >
       <Box
-          sx={{
-            position: "absolute",
-            top: "-80px",
-            opacity: "0.1",
-            right: 0
-          }}
-          component="img"
-          src={RoadmapBg}
-        />
+        sx={{
+          position: "absolute",
+          top: "-80px",
+          opacity: "0.1",
+          right: 0,
+        }}
+        component="img"
+        src={RoadmapBg}
+      />
       <Container maxWidth="lg">
         <Box
           sx={{
