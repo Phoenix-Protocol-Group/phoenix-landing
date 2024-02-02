@@ -9,6 +9,7 @@ import Divider from "../components/Divider";
 import GetStarted from "../components/GetStarted";
 import Banner from "../components/Banner";
 import Team from "../components/Team";
+import Roadmap from "../components/Roadmap";
 
 
 const IndexPage = () => {
@@ -17,9 +18,12 @@ const IndexPage = () => {
       <Seo />
       <Layout>
         <Hero />
+        <TokensSlider />
         <TextImage />
         <Divider />
         <GetStarted />
+        <Divider />
+        <Roadmap />
         <Divider />
         <Team />
         <Banner />
