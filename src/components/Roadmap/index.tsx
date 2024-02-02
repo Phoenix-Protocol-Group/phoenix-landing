@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import RoadmapBg from "../../images/roadmapBg.png";
+import { Fade } from "react-awesome-reveal";
 
 const RoadMapItem = ({
   quartal,
@@ -12,6 +13,7 @@ const RoadMapItem = ({
 }) => {
   return (
     <Grid item xs={12} md={3}>
+      <Fade direction="up" delay={100 * quartal}>
       <Box
         sx={{
           width: "100%",
@@ -60,6 +62,7 @@ const RoadMapItem = ({
         </Typography>
         <Typography mb={3}>{description}</Typography>
       </Box>
+      </Fade>
     </Grid>
   );
 };
