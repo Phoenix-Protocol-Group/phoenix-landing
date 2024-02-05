@@ -23,8 +23,6 @@ const IndexPage = () => {
         <Divider />
         <GetStarted />
         <Divider />
-        <Roadmap />
-        <Divider />
         <Team />
         <Banner />
       </Layout>
