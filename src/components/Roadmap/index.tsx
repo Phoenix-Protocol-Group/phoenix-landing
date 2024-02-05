@@ -72,6 +72,7 @@ const Roadmap = () => {
     <Box
       sx={{
         position: "relative",
+        display: "none"
       }}
     >
       <Box
