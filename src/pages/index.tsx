@@ -18,7 +18,6 @@ const IndexPage = () => {
       <Seo />
       <Layout>
         <Hero />
-        <TokensSlider />
         <TextImage />
         <Divider />
         <GetStarted />
