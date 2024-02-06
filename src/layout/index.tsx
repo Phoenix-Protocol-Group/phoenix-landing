@@ -75,6 +75,9 @@ const items = [{
 }, {
   id: "getStarted",
   title: "Get Started"
+}, {
+  id: "socials",
+  title: "Socials"
 }]
 
 const Layout = ({ children }: { children: any }) => {

@@ -150,9 +150,10 @@ const Hero = () => {
                     xs: 0,
                     md: "0 8px",
                   },
+                  maxWidth: "500px"
                 }}
               >
-                The serving you the tastiest gains in DeFi
+                Empowered by Soroban's technology, Phoenix is pioneering the ultimate DeFi Hub within Stellar's vibrant ecosystem. We're forging synergistic protocols, starting with a cutting-edge DEX, to deliver the tastiest DeFi experience imaginable.
               </Typography>
             
               <Box

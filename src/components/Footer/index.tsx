@@ -11,6 +11,7 @@ const Footer = ({
 }) => {
   return (
     <Box
+      id="socials"
       sx={{
         position: "relative",
         "&:after": {
@@ -53,32 +54,7 @@ const Footer = ({
               display: "flex",
             }}
           >
-            {items.map((page) => (
-              <Button
-                onClick={() => scrollTo(page.id)}
-                key={page.id}
-                sx={{
-                  color: "#FFF",
-                  fontFamily: "Ubuntu",
-                  fontSize: {
-                    xs: "12px",
-                    md: "14px",
-                  },
-                  zIndex: "1",
-                  textTransform: "none",
-                  fontStyle: "normal",
-                  fontWeight: 400,
-                  lineHeight: "20px",
-                  opacity: "0.6000000238418579",
-                  marginRight: {
-                    xs: 0,
-                    md: "16px",
-                  },
-                }}
-              >
-                {page.title}
-              </Button>
-            ))}
+            @TODO Social Icons
           </Box>
           <CustomButton label="Launch App" />
         </Box>
@@ -102,7 +78,7 @@ const Footer = ({
             opacity: 0.6000000238418579,
           }}
         >
-          © Phoenix 2023
+          © Phoenix {new Date().getFullYear()}
         </Typography>
       </Container>
     </Box>

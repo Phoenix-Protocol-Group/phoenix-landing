@@ -4,7 +4,7 @@ import {
   Button,
   Container,
   IconButton,
-  Toolbar
+  Toolbar,
 } from "@mui/material";
 import { Fade } from "react-awesome-reveal";
 import CustomButton from "../Button";
@@ -13,9 +13,9 @@ import { useEffect, useState } from "react";
 
 const NavBar = ({
   items,
-  scrollTo
+  scrollTo,
 }: {
-  items: {id: string, title: string}[],
+  items: { id: string; title: string }[];
   scrollTo: (id: string) => void;
 }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -25,6 +25,11 @@ const NavBar = ({
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+  const scrollAndClose = (id: string) => {
+    scrollTo(id);
+    setIsDrawerOpen(false);
+  }
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -96,7 +101,13 @@ const NavBar = ({
                 },
               }}
             >
-              <Fade cascade triggerOnce direction="down" delay={400} damping={0.2}>
+              <Fade
+                cascade
+                triggerOnce
+                direction="down"
+                delay={400}
+                damping={0.2}
+              >
                 {items.map((page, index) => (
                   <Button
                     onClick={() => scrollTo(page.id)}
@@ -116,6 +127,23 @@ const NavBar = ({
                     {page.title}
                   </Button>
                 ))}
+                <Button
+                  href="#"
+                  target="_blank"
+                  sx={{
+                    color: "#FFF",
+                    fontFamily: "Ubuntu",
+                    fontSize: "14px",
+                    textTransform: "none",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    lineHeight: "20px",
+                    opacity: "0.6000000238418579",
+                    marginRight: "16px",
+                  }}
+                >
+                  Whitepaper
+                </Button>
               </Fade>
             </Box>
             <Box
@@ -169,7 +197,7 @@ const NavBar = ({
       >
         {items.map((page) => (
           <Button
-            onClick={() => scrollTo(page.id)}
+            onClick={() => scrollAndClose(page.id)}
             key={page.id}
             sx={{
               color: "#FFF",
@@ -186,6 +214,23 @@ const NavBar = ({
             {page.title}
           </Button>
         ))}
+        <Button
+          href="#"
+          target="_blank"
+          sx={{
+            color: "#FFF",
+            fontFamily: "Ubuntu",
+            fontSize: "24px",
+            textTransform: "none",
+            fontStyle: "normal",
+            fontWeight: 400,
+            lineHeight: "20px",
+            opacity: "0.6000000238418579",
+            marginBottom: "16px",
+          }}
+        >
+          Whitepaper
+        </Button>
       </Box>
     </Box>
   );

@@ -63,7 +63,7 @@ const TextImage = () => {
                   </Typography>
                 </Typography>
                 <Typography sx={BoxTextStyle}>
-                  We collect street food level fees so you can keep your wallet more full
+                Thanks to Stellar's exceptional scalability and rapid execution, our platform offers ultra-low fees and lightning-fast transaction speeds. Say goodbye to costly delays and hello to seamless transactions that won't break the bank!
                 </Typography>
               </Box>
             </Fade>
@@ -104,7 +104,7 @@ const TextImage = () => {
                   </Typography>
                 </Typography>
                 <Typography sx={BoxTextStyle}>
-                  Tasty and creative incentives that will make your mouth water
+                  Our innovative incentive structure is designed to leave users' mouths watering. Satisfying your cravings for both efficiency and value has never been more appetizing.
                 </Typography>
               </Box>
             </Fade>
@@ -130,7 +130,7 @@ const TextImage = () => {
                   {" "}of Pairs
                 </Typography>
                 <Typography sx={BoxTextStyle}>
-                  A vast menu of trading pairs with new pairs added frequently to keep things fresh!
+                  Dive into a Diverse Range of Token Pairs! Experience our platform's constantly updated selection of token pairs, ensuring you always have access to the latest trading opportunities.
                 </Typography>
               </Box>
             </Fade>

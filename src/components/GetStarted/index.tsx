@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Link, Typography } from "@mui/material";
 import { Fade } from "react-awesome-reveal";
 
 const StepHeaderStyle = {
@@ -64,7 +64,7 @@ const GetStarted = () => {
             <Fade direction="up" delay={200}>
               <Typography sx={StepHeaderStyle}>Step 1</Typography>
               <Typography sx={StepTextStyle}>
-                Install a wallet to your browser, such as Freighter wallet
+                Install a wallet to your browser, such as <Link target="_blank" href="https://www.freighter.app/">Freighter</Link> wallet
               </Typography>
             </Fade>
           </Grid>
@@ -72,7 +72,7 @@ const GetStarted = () => {
             <Fade direction="up" delay={400}>
               <Typography sx={StepHeaderStyle}>Step 2</Typography>
               <Typography sx={StepTextStyle}>
-                Send some XLM to wallet address, such as from a centralized exchange or request some from a faucet
+                Send XLM to your wallet address, such as from a centralized exchange or request some from a faucet
               </Typography>
             </Fade>
           </Grid>
@@ -80,7 +80,7 @@ const GetStarted = () => {
             <Fade direction="up" delay={600}>
               <Typography sx={StepHeaderStyle}>Step 3</Typography>
               <Typography sx={StepTextStyle}>
-              Connect your wallet with Phoenix Defi Hub!
+                Connect your wallet with Phoenix DeFi Hub!
               </Typography>
             </Fade>
           </Grid>

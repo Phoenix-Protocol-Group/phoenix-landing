@@ -112,8 +112,7 @@ const Team = () => {
                     marginBottom: "32px",
                   }}
                 >
-                  We envision more products and applications to be launched by
-                  Phoenix in the future
+                  Our dedicated developers are cooking up more products and applications to join the Phoenix DeFi Hub in the near future. Ultimately, we set our eye on inter-ecosystem deliveries. Stay tuned for exciting updates!
                 </Typography>
               </Box>
             </Grid>
@@ -229,8 +228,7 @@ const Team = () => {
               opacity: 0.6,
             }}
           >
-            We envision more products and applications to be
-            <br /> launched by Phoenix in the future
+            Our dedicated developers are cooking up more products and applications to join the Phoenix DeFi Hub in the near future. Ultimately, we set our eye on inter-ecosystem deliveries. Stay tuned for exciting updates!
           </Typography>
         </Grid>
       </Grid>
