@@ -190,6 +190,7 @@ const NavBar = () => {
                 <Button
                   href="#"
                   target="_blank"
+                  disabled={true}
                   sx={{
                     color: "#FFF",
                     fontFamily: "Ubuntu",
@@ -262,7 +263,7 @@ const NavBar = () => {
         <Button onClick={() => scrollTo("about")} sx={mobileNavItemStyle}>
           About
         </Button>
-        <Button href="#" target="_blank" sx={mobileNavItemStyle}>
+        <Button href="#" target="_blank" sx={mobileNavItemStyle} disabled={true}>
           Whitepaper
         </Button>
         <Box sx={{

@@ -9,8 +9,12 @@ const socialIconStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  background: "rgba(255, 255, 255, 0.08)",
-  marginRight: "16px"
+  backgroundColor: "rgba(255, 255, 255, 0.08)",
+  marginRight: "16px",
+  transition: "background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+  "&:hover": {
+    backgroundColor: "rgba(144, 202, 249, 0.08)"
+  }
 };
 
 const Footer = () => {

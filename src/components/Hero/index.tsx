@@ -200,7 +200,7 @@ const Hero = () => {
             />
           </Grid>
         </Grid>
-        <Grid container spacing={2} id="pools">
+        <Grid container spacing={2} display="none">
           <Grid item xs={12} lg={6}>
             <Box
               sx={{
