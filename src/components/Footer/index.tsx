@@ -1,14 +1,19 @@
-import { Box, Container, Button, Typography } from "@mui/material";
+import { Box, Container, Button, Typography, Link } from "@mui/material";
 import CustomButton from "../Button";
 import { Logo } from "../SVG";
 
-const Footer = ({
-  items,
-  scrollTo
-}: {
-  items: {id: string, title: string}[],
-  scrollTo: (id: string) => void;
-}) => {
+const socialIconStyle = {
+  borderRadius: "16px",
+  width: "52px",
+  height: "52px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  background: "rgba(255, 255, 255, 0.08)",
+  marginRight: "16px"
+};
+
+const Footer = () => {
   return (
     <Box
       id="socials"
@@ -16,6 +21,7 @@ const Footer = ({
         position: "relative",
         "&:after": {
           position: "absolute",
+          pointerEvents: "none",
           content: "' '",
           borderRadius: "1103px",
           opacity: 0.5,
@@ -54,7 +60,20 @@ const Footer = ({
               display: "flex",
             }}
           >
-            @TODO Social Icons
+            <Link
+              href="https://discord.gg/yWqJwJ4yza"
+              target="_blank"
+              sx={socialIconStyle}
+            >
+              <Box component="img" src="/images/Discord.svg" />
+            </Link>
+            <Link
+              href="https://twitter.com/PhoenixDefiHub"
+              target="_blank"
+              sx={socialIconStyle}
+            >
+              <Box component="img" src="/images/X.svg" />
+            </Link>
           </Box>
           <CustomButton label="Launch App" />
         </Box>
