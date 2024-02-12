@@ -75,27 +75,19 @@ const items = [{
 }, {
   id: "getStarted",
   title: "Get Started"
+}, {
+  id: "socials",
+  title: "Socials"
 }]
 
 const Layout = ({ children }: { children: any }) => {
-  const scrollTo = (id: string) => {
-    const yOffset = -120; 
-
-    const element = document.getElementById(id);
-
-    if(element) {
-      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({top: y, behavior: 'smooth'});
-    }
-  };
-
   return (
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <NavBar items={items} scrollTo={scrollTo} />
+        <NavBar />
         {children}
-        <Footer items={items} scrollTo={scrollTo} />
+        <Footer />
       </ThemeProvider>
     </>
   );

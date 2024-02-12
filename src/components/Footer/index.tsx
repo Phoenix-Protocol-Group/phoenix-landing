@@ -1,20 +1,31 @@
-import { Box, Container, Button, Typography } from "@mui/material";
+import { Box, Container, Button, Typography, Link } from "@mui/material";
 import CustomButton from "../Button";
 import { Logo } from "../SVG";
 
-const Footer = ({
-  items,
-  scrollTo
-}: {
-  items: {id: string, title: string}[],
-  scrollTo: (id: string) => void;
-}) => {
+const socialIconStyle = {
+  borderRadius: "16px",
+  width: "52px",
+  height: "52px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  backgroundColor: "rgba(255, 255, 255, 0.08)",
+  marginRight: "16px",
+  transition: "background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+  "&:hover": {
+    backgroundColor: "rgba(144, 202, 249, 0.08)"
+  }
+};
+
+const Footer = () => {
   return (
     <Box
+      id="socials"
       sx={{
         position: "relative",
         "&:after": {
           position: "absolute",
+          pointerEvents: "none",
           content: "' '",
           borderRadius: "1103px",
           opacity: 0.5,
@@ -53,32 +64,20 @@ const Footer = ({
               display: "flex",
             }}
           >
-            {items.map((page) => (
-              <Button
-                onClick={() => scrollTo(page.id)}
-                key={page.id}
-                sx={{
-                  color: "#FFF",
-                  fontFamily: "Ubuntu",
-                  fontSize: {
-                    xs: "12px",
-                    md: "14px",
-                  },
-                  zIndex: "1",
-                  textTransform: "none",
-                  fontStyle: "normal",
-                  fontWeight: 400,
-                  lineHeight: "20px",
-                  opacity: "0.6000000238418579",
-                  marginRight: {
-                    xs: 0,
-                    md: "16px",
-                  },
-                }}
-              >
-                {page.title}
-              </Button>
-            ))}
+            <Link
+              href="https://discord.gg/yWqJwJ4yza"
+              target="_blank"
+              sx={socialIconStyle}
+            >
+              <Box component="img" src="/images/Discord.svg" />
+            </Link>
+            <Link
+              href="https://twitter.com/PhoenixDefiHub"
+              target="_blank"
+              sx={socialIconStyle}
+            >
+              <Box component="img" src="/images/X.svg" />
+            </Link>
           </Box>
           <CustomButton label="Launch App" />
         </Box>
@@ -102,7 +101,7 @@ const Footer = ({
             opacity: 0.6000000238418579,
           }}
         >
-          © Phoenix 2023
+          © Phoenix {new Date().getFullYear()}
         </Typography>
       </Container>
     </Box>

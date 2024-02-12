@@ -150,11 +150,15 @@ const Hero = () => {
                     xs: 0,
                     md: "0 8px",
                   },
+                  maxWidth: "500px",
                 }}
               >
-                The serving you the tastiest gains in DeFi
+                Empowered by Soroban's technology, Phoenix is pioneering the
+                ultimate DeFi Hub within Stellar's vibrant ecosystem. We're
+                forging synergistic protocols, starting with a cutting-edge DEX,
+                to deliver the tastiest DeFi experience imaginable.
               </Typography>
-            
+
               <Box
                 sx={{
                   display: "flex",
@@ -199,7 +203,7 @@ const Hero = () => {
             />
           </Grid>
         </Grid>
-        <Grid container spacing={2} id="pools" display="none">
+        <Grid container spacing={2}>
           <Grid item xs={12} lg={6}>
             <Box
               sx={{
@@ -210,30 +214,67 @@ const Hero = () => {
             >
               <Grid container spacing={5}>
                 <Grid item xs={12} md={5} sx={centerStyle}>
-                  <img src={LiquidityPreview} />
+                  <Box
+                    sx={{
+                      position: "relative",
+                      marginRight: "20px"
+                    }}
+                  >
+                    <Box
+                      component="img"
+                      src={"/images/heroPoolDetails.png"}
+                      sx={{
+                        border: "1px solid #424242",
+                        borderRadius: "16px",
+                      }}
+                    />
+                    <Box
+                      component="img"
+                      src={"/images/heroPoolDetails.png"}
+                      sx={{
+                        position: "absolute",
+                        right: "-20px",
+                        top: "-15px",
+                        zIndex: "-1",
+                        border: "1px solid #424242",
+                        borderRadius: "16px",
+                      }}
+                    />
+                  </Box>
                 </Grid>
                 <Grid item xs={12} md={7}>
                   <Typography sx={BoxHeaderStyle}>
-                    Highest Liquidity Pool
+                    Add Liquidity <br /> to popular pools
+                  </Typography>
+                  <Typography sx={BoxTextStyle}>
+                    Dive into the world of limitless possibilities on Stellar as users seamlessly inject their tokens into our savory liquidity pools, where flavors of innovation and opportunity meld together.
                   </Typography>
                 </Grid>
               </Grid>
             </Box>
             <Box
               sx={{
-                padding: "48px 32px 16px 44px",
+                padding: {
+                  xs: "48px 32px 16px 44px",
+                  md: "48px 0 64px 44px"
+                },
                 overflow: "hidden",
                 ...BoxStyle,
               }}
             >
               <Grid container spacing={5}>
                 <Grid item xs={12} md={7}>
-                  <Typography sx={BoxHeaderStyle}>
-                    Highest APR Pool
+                  <Typography sx={BoxHeaderStyle}>Track your assets</Typography>
+                  <Typography sx={BoxTextStyle}>
+                    Effortlessly relish control of your financial portfolio with our asset tracking service. Stay informed and empowered, every step of the way.
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={5} sx={centerStyle}>
-                  <img src={LiquidityPreview} />
+                  <Box sx={{
+                    overflow: "hidden"
+                  }}>
+                  <Box component="img" src={"/images/heroTrackAssets.svg"} />
+                  </Box>
                 </Grid>
               </Grid>
             </Box>
@@ -241,36 +282,67 @@ const Hero = () => {
           <Grid item xs={12} lg={6}>
             <Box
               sx={{
-                padding: "48px 32px 16px 42px",
+                padding: "48px 0 0 42px",
                 marginBottom: "20px",
                 overflow: "hidden",
                 ...BoxStyle,
               }}
             >
               <Grid container spacing={5}>
-                <Grid item xs={12} md={7}>
+                <Grid item xs={12} md={6}>
                   <Typography sx={BoxHeaderStyle}>
-                    Newest Liquidity pool
+                    Follow current trends
+                  </Typography>
+                  <Typography sx={BoxTextStyle}>
+                    Don't let yourself fall behind! Stay tastefully informed with the latest trends on our cutting-edge history page!
                   </Typography>
                 </Grid>
-                <Grid item xs={12} md={5} sx={centerStyle}>
-                  <img src={LiquidityPreview} />
+                <Grid item xs={12} md={6} sx={centerStyle}>
+                  <Box sx={{
+                    position: "relative",
+                    overflow: "hidden",
+                    height: "210px"
+                  }}>
+                    <Box
+                      component="img"
+                      src={"/images/heroPriceCharts.png"}
+                      sx={{
+                        maxWidth: "unset",
+                        width: "110%"
+                      }}
+                    />
+                  </Box>
                 </Grid>
               </Grid>
             </Box>
             <Box
               sx={{
-                padding: "48px 32px",
+                padding: {
+                  xs: "48px 32px 48px 32px",
+                  md: "48px 32px 48px 0"
+                },
                 ...BoxStyle,
               }}
             >
               <Grid container spacing={5}>
                 <Grid item xs={12} md={5} sx={centerStyle}>
-                  <img src={LiquidityPreview} />
+                  <Box sx={{
+                    height: "228px",
+                    overflow: "hidden",
+                  }}>
+                    <Box component="img" src={"/images/heroSwap.png"} sx={{
+                      width: "150%",
+                      maxWidth: "unset",
+                      transform: "translateX(-40%)"
+                    }} />
+                  </Box>
                 </Grid>
                 <Grid item xs={12} md={7}>
                   <Typography sx={BoxHeaderStyle}>
-                    Highest Volume pool (past 24 hrs)
+                    Swap your tokens with ease
+                  </Typography>
+                  <Typography sx={BoxTextStyle}>
+                    Experience seamless token swapping with our intuitive platform. Swap your tokens effortlessly and enjoy hassle-free transactions.
                   </Typography>
                 </Grid>
               </Grid>

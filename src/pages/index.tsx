@@ -18,12 +18,10 @@ const IndexPage = () => {
       <Seo />
       <Layout>
         <Hero />
-        <TokensSlider />
+        <Divider />
         <TextImage />
         <Divider />
         <GetStarted />
-        <Divider />
-        <Team />
         <Banner />
       </Layout>
     </main>
