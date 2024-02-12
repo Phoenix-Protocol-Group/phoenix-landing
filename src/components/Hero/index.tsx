@@ -247,7 +247,7 @@ const Hero = () => {
                     Add Liquidity <br /> to popular pools
                   </Typography>
                   <Typography sx={BoxTextStyle}>
-                    Embrace diversity with our constantly updated lineup of new pools. Seize the chance to contribute liquidity and unlock untapped potential.
+                    Dive into the world of limitless possibilities on Stellar as users seamlessly inject their tokens into our savory liquidity pools, where flavors of innovation and opportunity meld together.
                   </Typography>
                 </Grid>
               </Grid>
@@ -266,7 +266,7 @@ const Hero = () => {
                 <Grid item xs={12} md={7}>
                   <Typography sx={BoxHeaderStyle}>Track your assets</Typography>
                   <Typography sx={BoxTextStyle}>
-                    Effortlessly manage your financial portfolio with our service. Stay informed and in control of your assets.
+                    Effortlessly relish control of your financial portfolio with our asset tracking service. Stay informed and empowered, every step of the way.
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={5} sx={centerStyle}>
@@ -294,7 +294,7 @@ const Hero = () => {
                     Follow current trends
                   </Typography>
                   <Typography sx={BoxTextStyle}>
-                    Don't be left behind! Stay hip to the latest trends and watch your journey soar!
+                    Don't let yourself fall behind! Stay tastefully informed with the latest trends on our cutting-edge history page!
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={6} sx={centerStyle}>
@@ -327,7 +327,7 @@ const Hero = () => {
               <Grid container spacing={5}>
                 <Grid item xs={12} md={5} sx={centerStyle}>
                   <Box sx={{
-                    height: "205px",
+                    height: "228px",
                     overflow: "hidden",
                   }}>
                     <Box component="img" src={"/images/heroSwap.png"} sx={{
