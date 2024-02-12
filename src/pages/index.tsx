@@ -22,7 +22,6 @@ const IndexPage = () => {
         <Divider />
         <GetStarted />
         <Divider />
-        <Team />
         <Banner />
       </Layout>
     </main>
