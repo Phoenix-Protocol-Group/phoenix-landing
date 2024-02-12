@@ -200,7 +200,7 @@ const Hero = () => {
             />
           </Grid>
         </Grid>
-        <Grid container spacing={2} display="none">
+        <Grid container spacing={2}>
           <Grid item xs={12} lg={6}>
             <Box
               sx={{
@@ -211,11 +211,26 @@ const Hero = () => {
             >
               <Grid container spacing={5}>
                 <Grid item xs={12} md={5} sx={centerStyle}>
-                  <img src={LiquidityPreview} />
+                  <Box sx={{
+                    position: "relative"
+                  }}>
+                  <Box component="img" src={"/images/heroPoolDetails.png"} sx={{
+                    border: "1px solid #424242",
+                    borderRadius: "16px"
+                  }} />
+                  <Box component="img" src={"/images/heroPoolDetails.png"} sx={{
+                    position: "absolute",
+                    right: "-20px",
+                    top: "-15px",
+                    zIndex: "-1",
+                    border: "1px solid #424242",
+                    borderRadius: "16px"
+                  }} />
+                  </Box>
                 </Grid>
                 <Grid item xs={12} md={7}>
                   <Typography sx={BoxHeaderStyle}>
-                    Highest Liquidity Pool
+                  Add Liquidity <br/> to popular pools
                   </Typography>
                 </Grid>
               </Grid>
@@ -230,11 +245,11 @@ const Hero = () => {
               <Grid container spacing={5}>
                 <Grid item xs={12} md={7}>
                   <Typography sx={BoxHeaderStyle}>
-                    Highest APR Pool
+                    Track your assets
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={5} sx={centerStyle}>
-                  <img src={LiquidityPreview} />
+                  <img src={"/images/heroTrackAssets.svg"} />
                 </Grid>
               </Grid>
             </Box>
@@ -251,11 +266,11 @@ const Hero = () => {
               <Grid container spacing={5}>
                 <Grid item xs={12} md={7}>
                   <Typography sx={BoxHeaderStyle}>
-                    Newest Liquidity pool
+                    Follow current trends
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={5} sx={centerStyle}>
-                  <img src={LiquidityPreview} />
+                  <img src={"/images/heroPriceCharts.png"} />
                 </Grid>
               </Grid>
             </Box>
@@ -267,11 +282,11 @@ const Hero = () => {
             >
               <Grid container spacing={5}>
                 <Grid item xs={12} md={5} sx={centerStyle}>
-                  <img src={LiquidityPreview} />
+                  <img src={"/images/heroSwap.png"} />
                 </Grid>
                 <Grid item xs={12} md={7}>
                   <Typography sx={BoxHeaderStyle}>
-                    Highest Volume pool (past 24 hrs)
+                    Swap your tokens with ease
                   </Typography>
                 </Grid>
               </Grid>
