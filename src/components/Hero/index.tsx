@@ -247,7 +247,7 @@ const Hero = () => {
                     Add Liquidity <br /> to popular pools
                   </Typography>
                   <Typography sx={BoxTextStyle}>
-                    Embrace diversity and growth with our constantly updated lineup of new pools. Seize the chance to contribute liquidity and unlock untapped potential.
+                    Embrace diversity with our constantly updated lineup of new pools. Seize the chance to contribute liquidity and unlock untapped potential.
                   </Typography>
                 </Grid>
               </Grid>
