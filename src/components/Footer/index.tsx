@@ -10,11 +10,12 @@ const socialIconStyle = {
   justifyContent: "center",
   alignItems: "center",
   backgroundColor: "rgba(255, 255, 255, 0.08)",
-  marginRight: "16px",
-  transition: "background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+  marginRight: { xs: "0", md: "16px" },
+  transition:
+    "background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
   "&:hover": {
-    backgroundColor: "rgba(144, 202, 249, 0.08)"
-  }
+    backgroundColor: "rgba(144, 202, 249, 0.08)",
+  },
 };
 
 const Footer = () => {
@@ -60,7 +61,11 @@ const Footer = () => {
           <Box
             sx={{
               flexGrow: 1,
-              justifyContent: "flex-end",
+              justifyContent: { xs: "space-around", md: "flex-end" },
+              gap: {
+                xs: 1,
+                md: 0,
+              },
               display: "flex",
             }}
           >
