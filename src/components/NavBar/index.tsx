@@ -32,7 +32,7 @@ const socialIconStyle = {
   justifyContent: "center",
   alignItems: "center",
   background: "rgba(255, 255, 255, 0.08)",
-  margin: "0 8px"
+  margin: "0 8px",
 };
 
 const NavBar = () => {
@@ -263,17 +263,39 @@ const NavBar = () => {
         <Button onClick={() => scrollTo("about")} sx={mobileNavItemStyle}>
           About
         </Button>
-        <Button href="#" target="_blank" sx={mobileNavItemStyle} disabled={true}>
+        <Button
+          href="#"
+          target="_blank"
+          sx={mobileNavItemStyle}
+          disabled={true}
+        >
           Whitepaper
         </Button>
-        <Box sx={{
-          display: "flex"
-        }}>
-          <Link href="https://discord.gg/yWqJwJ4yza" target="_blank" sx={socialIconStyle}>
+        <Box
+          sx={{
+            display: "flex",
+          }}
+        >
+          <Link
+            href="https://twitter.com/PhoenixDefiHub"
+            target="_blank"
+            sx={socialIconStyle}
+          >
+            <Box component="img" src="/images/X.svg" />
+          </Link>
+          <Link
+            href="https://discord.gg/yWqJwJ4yza"
+            target="_blank"
+            sx={socialIconStyle}
+          >
             <Box component="img" src="/images/Discord.svg" />
           </Link>
-          <Link href="https://twitter.com/PhoenixDefiHub" target="_blank" sx={socialIconStyle}>
-            <Box component="img" src="/images/X.svg" />
+          <Link
+            href="https://github.com/Phoenix-Protocol-Group"
+            target="_blank"
+            sx={socialIconStyle}
+          >
+            <Box component="img" src="/images/Github.svg" />
           </Link>
         </Box>
       </Box>

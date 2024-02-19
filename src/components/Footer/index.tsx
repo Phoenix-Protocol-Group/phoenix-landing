@@ -65,6 +65,13 @@ const Footer = () => {
             }}
           >
             <Link
+              href="https://twitter.com/PhoenixDefiHub"
+              target="_blank"
+              sx={socialIconStyle}
+            >
+              <Box component="img" src="/images/X.svg" />
+            </Link>
+            <Link
               href="https://discord.gg/yWqJwJ4yza"
               target="_blank"
               sx={socialIconStyle}
@@ -72,11 +79,11 @@ const Footer = () => {
               <Box component="img" src="/images/Discord.svg" />
             </Link>
             <Link
-              href="https://twitter.com/PhoenixDefiHub"
+              href="https://github.com/Phoenix-Protocol-Group"
               target="_blank"
               sx={socialIconStyle}
             >
-              <Box component="img" src="/images/X.svg" />
+              <Box component="img" src="/images/Github.svg" />
             </Link>
           </Box>
           <CustomButton label="Launch App" />

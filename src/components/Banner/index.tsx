@@ -32,7 +32,7 @@ const Banner = () => {
               marginBottom: "32px",
             }}
           >
-            Get started with <br />
+            Dive into the <br />
             Phoenix Ecosystem
           </Typography>
           <Button label="Launch App" />
