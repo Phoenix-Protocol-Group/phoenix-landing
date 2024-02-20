@@ -52,6 +52,46 @@ const Banner = () => {
             <Box
               sx={{
                 borderRadius: "50%",
+                background: "#000",
+                position: "absolute",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: {
+                  xs: "128px",
+                  sm: "260px",
+                  md: "312px",
+                },
+                height: {
+                  xs: "128px",
+                  sm: "260px",
+                  md: "312px",
+                },
+                right: { md: "-22%", lg: "-15%" },
+                top: { md: "-12px", lg: "-28px" },
+                transform: "translateY(-15%)",
+              }}
+            >
+              <LogoStellar />
+            </Box>
+            <Box
+              sx={{
+                position: "absolute",
+                right: "10%",
+                maxWidth: {
+                  xs: "128px",
+                  sm: "260px",
+                  md: "312px",
+                },
+                bottom: "0",
+                transform: "translateY(3%)",
+              }}
+            >
+              <LogoT />
+            </Box>
+            <Box
+              sx={{
+                borderRadius: "50%",
                 border: "3.493px solid rgba(255, 255, 255, 0.15)",
                 background: "#262629",
                 display: "flex",
@@ -74,46 +114,6 @@ const Banner = () => {
               }}
             >
               <LogoPhoenix />
-            </Box>
-            <Box
-              sx={{
-                borderRadius: "50%",
-                background: "#000",
-                position: "absolute",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: {
-                  xs: "128px",
-                  sm: "260px",
-                  md: "312px",
-                },
-                height: {
-                  xs: "128px",
-                  sm: "260px",
-                  md: "312px",
-                },
-                right: {md: "-22%", lg: "-15%"},
-                top: {md: "-12px", lg: "-28px"},
-                transform: "translateY(-15%)",
-              }}
-            >
-              <LogoStellar />
-            </Box>
-            <Box
-              sx={{
-                position: "absolute",
-                right: "10%",
-                maxWidth: {
-                  xs: "128px",
-                  sm: "260px",
-                  md: "312px",
-                },
-                bottom: "0",
-                transform: "translateY(3%)",
-              }}
-            >
-              <LogoT />
             </Box>
           </Box>
         </Grid>
