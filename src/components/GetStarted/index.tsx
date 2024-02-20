@@ -72,7 +72,7 @@ const GetStarted = () => {
             <Fade direction="up" delay={400}>
               <Typography sx={StepHeaderStyle}>Step 2</Typography>
               <Typography sx={StepTextStyle}>
-                Send XLM to your wallet address, such as from a centralized exchange or request some from a faucet
+                Send XLM to your wallet address, such as from a centralized exchange, or buy XLM and USDC directly in the Phoenix App
               </Typography>
             </Fade>
           </Grid>
