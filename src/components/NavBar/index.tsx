@@ -104,11 +104,40 @@ const NavBar = () => {
                 sx={{
                   display: {
                     xs: "none",
-                    md: "block",
+                    md: "flex",
                   },
                 }}
               >
                 <Logo />
+                <Box
+                  gap={0.8}
+                  sx={{
+                    display: {
+                      xs: "none",
+                      md: "flex",
+                    },
+                    alignItems: "center",
+                    pt: 1.5,
+                    ml: 2
+                  }}
+                >
+                  <Fade
+                    triggerOnce={true}
+                    direction="down"
+                    cascade={true}
+                    delay={500}
+                  >
+                    <Link href="https://twitter.com/PhoenixDefiHub" target="_blank">
+                      <Box component="img" src="/images/X.svg" />
+                    </Link>
+                    <Link href="https://discord.gg/yWqJwJ4yza" target="_blank">
+                      <Box component="img" src="/images/Discord.svg" />
+                    </Link>
+                    <Link href="https://github.com/Phoenix-Protocol-Group" target="_blank">
+                      <Box component="img" src="/images/Github.svg" />
+                    </Link>
+                  </Fade>
+                </Box>
               </Box>
             </Fade>
             <Box
@@ -170,22 +199,6 @@ const NavBar = () => {
                   }}
                 >
                   About
-                </Button>
-                <Button
-                  onClick={() => scrollTo("socials")}
-                  sx={{
-                    color: "#FFF",
-                    fontFamily: "Ubuntu",
-                    fontSize: "14px",
-                    textTransform: "none",
-                    fontStyle: "normal",
-                    fontWeight: 400,
-                    lineHeight: "20px",
-                    opacity: "0.6000000238418579",
-                    marginRight: "16px",
-                  }}
-                >
-                  Socials
                 </Button>
                 <Button
                   href="#"
