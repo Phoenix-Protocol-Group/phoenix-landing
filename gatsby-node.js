@@ -1,25 +1,42 @@
-exports.onCreateWebpackConfig = ({ actions }) => {
-  if (typeof TextEncoder === "undefined") {
-    const util = require("util");
-    global.TextEncoder = util.TextEncoder;
-    global.TextDecoder = util.TextDecoder;
+const webpack = require("webpack");
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions, plugins }) => {
+  if (stage === "build-html" || stage === "develop-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /react-pdf/, // check /pdfjs-dist/ too
+            use: loaders.null(),
+          },
+          {
+            test: /pdfjs-dist/, // check /pdfjs-dist/ too
+            use: loaders.null(),
+          },
+        ],
+      },
+    });
   }
   actions.setWebpackConfig({
-    externals: {
-      canvas: "commonjs canvas", // This line tells webpack to treat canvas as an external dependency
-    },
     resolve: {
       fallback: {
-        crypto: require.resolve("crypto-browserify"),
-        util: require.resolve("util/"),
+        fs: "empty",
+        zlib: require.resolve("browserify-zlib"),
         stream: require.resolve("stream-browserify"),
-        url: false,
-        https: require.resolve("https-browserify"),
-        http: require.resolve("stream-http"),
-        zlib: false,
-        fs: false,
-        path: false,
+        util: require.resolve("util"),
+        buffer: require.resolve("buffer"),
+        assert: require.resolve("assert"),
       },
     },
+    externals: [
+      {
+        canvas: "canvas",
+      },
+    ],
+    plugins: [
+      new webpack.ProvidePlugin({
+        Buffer: ["buffer", "Buffer"],
+      }),
+    ],
   });
 };
