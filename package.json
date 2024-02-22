@@ -24,9 +24,11 @@
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-pdf-viewer/default-layout": "^3.12.0",
     "@types/react-helmet": "^6.1.6",
+    "crypto-browserify": "^3.12.0",
     "gatsby": "^5.11.0",
     "gatsby-plugin-emotion": "^8.11.0",
     "gatsby-plugin-material-ui": "^4.0.2",
+    "https-browserify": "^1.0.0",
     "install": "^0.13.0",
     "path-browserify": "^1.0.1",
     "pdfjs-dist": "3.4.120",
@@ -36,7 +38,9 @@
     "react-helmet": "^6.1.0",
     "react-pageflip": "^2.0.3",
     "react-pdf": "^7.7.1",
-    "stream-browserify": "^3.0.0"
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "util": "^0.12.5"
   },
   "devDependencies": {
     "@types/node": "^20.3.3",
