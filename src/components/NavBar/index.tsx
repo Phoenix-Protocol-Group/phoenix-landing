@@ -201,9 +201,8 @@ const NavBar = () => {
                   About
                 </Button>
                 <Button
-                  href="#"
+                  href="https://raw.githubusercontent.com/Phoenix-Protocol-Group/docs/main/Initial%20Phoenix%20Whitepaper.pdf"
                   target="_blank"
-                  disabled={true}
                   sx={{
                     color: "#FFF",
                     fontFamily: "Ubuntu",
